@@ -67,6 +67,8 @@
   footer { margin-top: 2.5rem; border-top: 1px solid #e3e7ea; padding-top: 1rem; font-size: .85rem; color: #566573; }
   footer a { color: #2e86c1; }
   .datamenu { display: flex; flex-wrap: wrap; gap: 1rem; margin: .5rem 0; }
+  table.pages tr.caveat td.pg .caveat-err { color: #b9770e; word-break: break-all; }
+  .caveat-badge { background: #fef9f3; color: #b9770e; border: 1px solid #f0b27a; padding: .1rem .4rem; border-radius: 4px; font-weight: 600; white-space: nowrap; }
 </style>
 </head>
 <body>
@@ -77,24 +79,25 @@
 
 <div class="meta">
   <span>Last audited: <strong>August 25, 2026</strong> (UTC)</span>
-  <span>Published runs: 1</span>
+  <span>Published runs: 2</span>
   <span>Tooling: <a href="https://github.com/ThirstyHead/audit-njc.edu">axe-core + Playwright</a>, run weekly via GitHub Actions</span>
-  <span><span class="delta first">first published run</span></span>
+  <span><span class="delta down">▼ 6 vs last run</span></span>
 </div>
 
 <h2>Latest results</h2>
 <div class="cards">
-  <div class="card"><span class="num">364</span><span class="lbl">Node-level violations</span></div>
+  <div class="card"><span class="num">358</span><span class="lbl">Node-level violations</span></div>
   <div class="card"><span class="num">83</span><span class="lbl">Pages audited</span></div>
-  <div class="card"><span class="num">366</span><span class="lbl">Need manual review</span></div>
+  <div class="card"><span class="num">367</span><span class="lbl">Need manual review</span></div>
+  <div class="card"><span class="num ">0</span><span class="lbl">Not audited (HTTP error)</span></div>
 </div>
 <div class="severities">
       <div class="sevcard" style="border-top:4px solid #b03a2e">
-        <span class="num">46</span>
+        <span class="num">45</span>
         <span class="lbl">Critical</span>
       </div>
       <div class="sevcard" style="border-top:4px solid #ca6f1e">
-        <span class="num">318</span>
+        <span class="num">313</span>
         <span class="lbl">Serious</span>
       </div>
       <div class="sevcard" style="border-top:4px solid #b7950b">
@@ -107,7 +110,19 @@
       </div></div>
 
 <h2>Trend</h2>
-<p class="count">The trend chart appears once at least two runs have been published.</p>
+<div>
+    <svg viewBox="0 0 680 150" class="spark" role="img" aria-label="Trend of total node-level violations across audit runs">
+      <polyline points="40.0,18.0 640.0,19.7" fill="none" stroke="#2c3e50" stroke-width="2.5" stroke-linejoin="round"/>
+      <circle cx="40.0" cy="18.0" r="4" fill="#2c3e50">
+         <title>2026-08-25T06:19:50.192Z — 364 node-level violations</title>
+       </circle>
+<circle cx="640.0" cy="19.7" r="4" fill="#2c3e50">
+         <title>2026-08-25T22:02:11.278Z — 358 node-level violations</title>
+       </circle>
+      <text x="40" y="142" class="axis">2026-08-25</text>
+      <text x="640" y="142" class="axis" text-anchor="end">2026-08-25</text>
+      <text x="648" y="23.681318681318686" class="axis">358</text>
+    </svg></div>
 
 <h2>Pages</h2>
 <p class="note">Every page audited in this run. “Audit report” opens that page's full axe report — violations, needs-review, and passes, with node-level detail.</p>
@@ -153,7 +168,7 @@
     </tr>
     <tr class="bad">
       <td class="pg"><a href="https://njc.edu/admissions/how-register-classes" rel="noopener">How to Register for Classes | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/admissions/how-register-classes</span></td>
-      <td class="n bad">7</td>
+      <td class="n bad">6</td>
       <td class="n">6</td>
       <td class="links"><a class="pgrep" href="pages/admissions-how-register-classes.html">Audit report</a></td>
     </tr>
@@ -339,7 +354,7 @@
     </tr>
     <tr class="bad">
       <td class="pg"><a href="https://njc.edu/future-students" rel="noopener">Future Students | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/future-students</span></td>
-      <td class="n bad">6</td>
+      <td class="n bad">2</td>
       <td class="n">10</td>
       <td class="links"><a class="pgrep" href="pages/future-students.html">Audit report</a></td>
     </tr>
@@ -537,8 +552,8 @@
     </tr>
     <tr class="bad">
       <td class="pg"><a href="https://njc.edu/registration" rel="noopener">Admissions - New Student Registration | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/registration</span></td>
-      <td class="n bad">4</td>
-      <td class="n">2</td>
+      <td class="n bad">3</td>
+      <td class="n">3</td>
       <td class="links"><a class="pgrep" href="pages/registration.html">Audit report</a></td>
     </tr>
     <tr class="bad">
@@ -616,11 +631,12 @@
   </tbody>
 </table>
 
+
 <h2>Data</h2>
 <div class="datamenu">
   <a href="latest.json">latest.json</a>
   <a href="history.json">history.json</a>
-  <a href="https://github.com/ThirstyHead/njc-audit/blob/main/reports/axe-2026-08-25T06-19-50-192Z.json">Raw report (latest)</a>
+  <a href="https://github.com/ThirstyHead/njc-audit/blob/main/reports/axe-2026-08-25T22-02-11-278Z.json">Raw report (latest)</a>
   <a href="https://github.com/ThirstyHead/njc-audit/tree/main/reports">All raw reports</a>
 </div>
 
@@ -632,7 +648,7 @@
   Automated tooling detects only a subset of accessibility failures and does not replace
   manual or assistive-technology testing. “Needs manual review” items are results axe
   could not determine automatically.</p>
-  <p>Generated 2026-08-25T06:19:50.776Z · <a href="https://thirstyhead.com/njc-audit/">thirstyhead.com/njc-audit/</a></p>
+  <p>Generated 2026-08-25T22:02:12.928Z · <a href="https://thirstyhead.com/njc-audit/">thirstyhead.com/njc-audit/</a></p>
 </footer>
 </body>
 </html>
