@@ -1,0 +1,19 @@
+{
+  "siteGenerated": "2026-08-25T06:19:50.777Z",
+  "series": [
+    {
+      "generated": "2026-08-25T06:19:50.192Z",
+      "reportFile": "axe-2026-08-25T06-19-50-192Z.json",
+      "pagesAudited": 83,
+      "pagesFailed": 0,
+      "totalViolations": 364,
+      "bySeverity": {
+        "critical": 46,
+        "serious": 318,
+        "moderate": 0,
+        "minor": 0
+      },
+      "needsReview": 366
+    }
+  ]
+}

@@ -1,0 +1,638 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WCAG 2.1 AA Audit — Northeastern Junior College (https://njc.edu)</title>
+<meta name="description" content="Automated weekly WCAG 2.1 AA accessibility audit results for https://njc.edu, produced with axe-core.">
+<style>
+  :root { color-scheme: light; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto; padding: 2rem 1.25rem 4rem; max-width: 940px;
+    font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #212f3c; background: #fdfdfc;
+  }
+  header h1 { font-size: 1.7rem; margin: 0 0 .25rem; }
+  header .sub { color: #566573; margin: 0 0 1rem; }
+  .meta { display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; color: #566573; font-size: .92rem; border-bottom: 1px solid #e3e7ea; padding-bottom: 1rem; margin-bottom: 1.5rem; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: .75rem; margin-bottom: 1rem; }
+  .card { background: #fff; border: 1px solid #e3e7ea; border-radius: 8px; padding: .9rem 1rem; }
+  .card .num { display: block; font-size: 1.9rem; font-weight: 700; line-height: 1.2; }
+  .card .lbl { color: #566573; font-size: .85rem; }
+  .sevcard { background: #fff; border: 1px solid #e3e7ea; border-radius: 8px; padding: .6rem .8rem; display: flex; align-items: baseline; gap: .5rem; }
+  .sevcard .num { font-size: 1.4rem; font-weight: 700; }
+  .sevcard .lbl { color: #566573; font-size: .82rem; }
+  .severities { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: .5rem; margin-bottom: 1.5rem; }
+  h2 { font-size: 1.2rem; margin: 2rem 0 .75rem; }
+  .spark { width: 100%; max-width: 680px; height: auto; background: #fff; border: 1px solid #e3e7ea; border-radius: 8px; }
+  .axis { font-size: 11px; fill: #7b8a8b; }
+  .delta { font-size: .9rem; font-weight: 600; }
+  .delta.up { color: #b03a2e; } .delta.down { color: #1e8449; }
+  .delta.flat, .delta.first { color: #7b8a8b; font-weight: 400; }
+  .page { background: #fff; border: 1px solid #e3e7ea; border-radius: 8px; padding: 1rem 1.25rem 1.25rem; margin-bottom: 1rem; }
+  .page.failed { border-color: #f0b27a; background: #fef9f3; }
+  .page h3 { margin: 0 0 .25rem; font-size: 1.05rem; word-break: break-all; }
+  .page h3 .title { font-weight: 400; color: #7b8a8b; font-size: .9rem; }
+  .page h4 { margin: 1rem 0 .5rem; font-size: .95rem; }
+  .count { color: #7b8a8b; font-weight: 400; font-size: .85rem; }
+  .total { margin: 0 0 .5rem; color: #566573; }
+  .clean { color: #1e8449; font-weight: 600; }
+  .warn { color: #b9770e; }
+  table { width: 100%; border-collapse: collapse; font-size: .9rem; }
+  th, td { text-align: left; padding: .45rem .6rem; border-bottom: 1px solid #eef1f2; vertical-align: top; }
+  th { color: #566573; font-size: .8rem; text-transform: uppercase; letter-spacing: .03em; }
+  .targets { color: #7b8a8b; font-size: .82rem; word-break: break-all; max-width: 260px; }
+  code { background: #f4f6f7; padding: .1rem .35rem; border-radius: 4px; font-size: .85em; }
+  ul.inc { margin: .25rem 0 0; padding-left: 1.2rem; }
+  .note { color: #566573; font-size: .9rem; margin: .25rem 0 .75rem; }
+  table.pages { width: 100%; border-collapse: collapse; font-size: .9rem; }
+  table.pages thead th {
+    position: sticky; top: 0; background: #fdfdfc; z-index: 1;
+    border-bottom: 2px solid #e3e7ea;
+  }
+  table.pages th.n, table.pages td.n { text-align: right; white-space: nowrap; }
+  table.pages td.n.bad { color: #b03a2e; font-weight: 700; }
+  table.pages td.pg { max-width: 0; }
+  table.pages td.pg a { word-break: break-all; }
+  table.pages .pwurl { display: block; color: #7b8a8b; font-size: .8rem; margin-top: .1rem; word-break: break-all; }
+  table.pages td.pg .err { word-break: break-all; }
+  table.pages td.links { white-space: nowrap; text-align: right; }
+  table.pages a.pgrep {
+    color: #2e86c1; text-decoration: none; font-weight: 600;
+    border: 1px solid #cfe6f5; background: #f4fafd; padding: .15rem .5rem; border-radius: 6px;
+  }
+  table.pages a.pgrep:hover { background: #e8f4fb; }
+  table.pages tr.bad td.pg a { color: #b03a2e; }
+  footer { margin-top: 2.5rem; border-top: 1px solid #e3e7ea; padding-top: 1rem; font-size: .85rem; color: #566573; }
+  footer a { color: #2e86c1; }
+  .datamenu { display: flex; flex-wrap: wrap; gap: 1rem; margin: .5rem 0; }
+</style>
+</head>
+<body>
+<header>
+  <h1>WCAG 2.1 AA Audit — Northeastern Junior College</h1>
+  <p class="sub"><a href="https://njc.edu">https://njc.edu</a></p>
+</header>
+
+<div class="meta">
+  <span>Last audited: <strong>August 25, 2026</strong> (UTC)</span>
+  <span>Published runs: 1</span>
+  <span>Tooling: <a href="https://github.com/ThirstyHead/audit-njc.edu">axe-core + Playwright</a>, run weekly via GitHub Actions</span>
+  <span><span class="delta first">first published run</span></span>
+</div>
+
+<h2>Latest results</h2>
+<div class="cards">
+  <div class="card"><span class="num">364</span><span class="lbl">Node-level violations</span></div>
+  <div class="card"><span class="num">83</span><span class="lbl">Pages audited</span></div>
+  <div class="card"><span class="num">366</span><span class="lbl">Need manual review</span></div>
+</div>
+<div class="severities">
+      <div class="sevcard" style="border-top:4px solid #b03a2e">
+        <span class="num">46</span>
+        <span class="lbl">Critical</span>
+      </div>
+      <div class="sevcard" style="border-top:4px solid #ca6f1e">
+        <span class="num">318</span>
+        <span class="lbl">Serious</span>
+      </div>
+      <div class="sevcard" style="border-top:4px solid #b7950b">
+        <span class="num">0</span>
+        <span class="lbl">Moderate</span>
+      </div>
+      <div class="sevcard" style="border-top:4px solid #707b7c">
+        <span class="num">0</span>
+        <span class="lbl">Minor</span>
+      </div></div>
+
+<h2>Trend</h2>
+<p class="count">The trend chart appears once at least two runs have been published.</p>
+
+<h2>Pages</h2>
+<p class="note">Every page audited in this run. “Audit report” opens that page's full axe report — violations, needs-review, and passes, with node-level detail.</p>
+
+<table class="pages">
+  <thead><tr><th class="pg">Page</th><th class="n">Violations</th><th class="n">Needs review</th><th>Report</th></tr></thead>
+  <tbody>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/" rel="noopener">Home Page | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/</span></td>
+      <td class="n bad">2</td>
+      <td class="n">17</td>
+      <td class="links"><a class="pgrep" href="pages/home.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/about-us" rel="noopener">About Us | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/about-us</span></td>
+      <td class="n bad">2</td>
+      <td class="n">2</td>
+      <td class="links"><a class="pgrep" href="pages/about-us.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/about-us/accreditation" rel="noopener">Accreditation | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/about-us/accreditation</span></td>
+      <td class="n bad">6</td>
+      <td class="n">2</td>
+      <td class="links"><a class="pgrep" href="pages/about-us-accreditation.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/about-us/college-tour" rel="noopener">The College Tour | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/about-us/college-tour</span></td>
+      <td class="n bad">37</td>
+      <td class="n">26</td>
+      <td class="links"><a class="pgrep" href="pages/about-us-college-tour.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/admissions" rel="noopener">Admissions | Open Enrollment at NJC</a> <span class="pwurl">https://njc.edu/admissions</span></td>
+      <td class="n bad">4</td>
+      <td class="n">23</td>
+      <td class="links"><a class="pgrep" href="pages/admissions.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/admissions/campus-map-directions" rel="noopener">Admissions - Campus Map Directions to Campus | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/admissions/campus-map-directions</span></td>
+      <td class="n bad">3</td>
+      <td class="n">6</td>
+      <td class="links"><a class="pgrep" href="pages/admissions-campus-map-directions.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/admissions/how-register-classes" rel="noopener">How to Register for Classes | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/admissions/how-register-classes</span></td>
+      <td class="n bad">7</td>
+      <td class="n">6</td>
+      <td class="links"><a class="pgrep" href="pages/admissions-how-register-classes.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/adult-and-continuing-education-northeastern-junior-college" rel="noopener">Adult and Continuing Education at Northeastern Junior College | GED and ESL Education</a> <span class="pwurl">https://njc.edu/adult-and-continuing-education-northeastern-junior-college</span></td>
+      <td class="n bad">2</td>
+      <td class="n">3</td>
+      <td class="links"><a class="pgrep" href="pages/adult-and-continuing-education-northeastern-junior-college.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/advisory-council" rel="noopener">Advisory Council | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/advisory-council</span></td>
+      <td class="n bad">3</td>
+      <td class="n">2</td>
+      <td class="links"><a class="pgrep" href="pages/advisory-council.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/alumni-association" rel="noopener">Alumni Association | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/alumni-association</span></td>
+      <td class="n bad">2</td>
+      <td class="n">2</td>
+      <td class="links"><a class="pgrep" href="pages/alumni-association.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/apply-housing" rel="noopener">Residence Life - Apply for Housing | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/apply-housing</span></td>
+      <td class="n bad">4</td>
+      <td class="n">5</td>
+      <td class="links"><a class="pgrep" href="pages/apply-housing.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/areas-of-interest" rel="noopener">Areas of Interest | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/areas-of-interest</span></td>
+      <td class="n bad">3</td>
+      <td class="n">13</td>
+      <td class="links"><a class="pgrep" href="pages/areas-of-interest.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/assessment" rel="noopener">Assessment | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/assessment</span></td>
+      <td class="n bad">2</td>
+      <td class="n">2</td>
+      <td class="links"><a class="pgrep" href="pages/assessment.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/bank-colorado-event-center" rel="noopener">Bank of Colorado Event Center | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/bank-colorado-event-center</span></td>
+      <td class="n bad">2</td>
+      <td class="n">8</td>
+      <td class="links"><a class="pgrep" href="pages/bank-colorado-event-center.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/cafeteria" rel="noopener">Cafeteria | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/cafeteria</span></td>
+      <td class="n bad">3</td>
+      <td class="n">2</td>
+      <td class="links"><a class="pgrep" href="pages/cafeteria.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/calendar" rel="noopener">Events Calendar | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/calendar</span></td>
+      <td class="n bad">11</td>
+      <td class="n">7</td>
+      <td class="links"><a class="pgrep" href="pages/calendar.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/calendar/event/081726/fall-full-term-2026-august-17-december-11-2026" rel="noopener">Fall Full Term 2026, August 17-December 11, 2026 | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/calendar/event/081726/fall-full-term-2026-august-17-december-11-2026</span></td>
+      <td class="n bad">11</td>
+      <td class="n">7</td>
+      <td class="links"><a class="pgrep" href="pages/calendar-event-081726-fall-full-term-2026-august-17-december-11-2026.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/calendar/event/082426/no-show-deadline" rel="noopener">No-Show Deadline | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/calendar/event/082426/no-show-deadline</span></td>
+      <td class="n bad">11</td>
+      <td class="n">7</td>
+      <td class="links"><a class="pgrep" href="pages/calendar-event-082426-no-show-deadline.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/calendar/event/082526/online-author-talks-beronda-montgomery" rel="noopener">Online Author Talks - Beronda Montgomery | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/calendar/event/082526/online-author-talks-beronda-montgomery</span></td>
+      <td class="n bad">12</td>
+      <td class="n">7</td>
+      <td class="links"><a class="pgrep" href="pages/calendar-event-082526-online-author-talks-beronda-montgomery.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/calendar/event/082726/online-author-talks-lucy-foley" rel="noopener">Online Author Talks - Lucy Foley | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/calendar/event/082726/online-author-talks-lucy-foley</span></td>
+      <td class="n bad">12</td>
+      <td class="n">7</td>
+      <td class="links"><a class="pgrep" href="pages/calendar-event-082726-online-author-talks-lucy-foley.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/calendar/event/083126/early-alert-grades-due-august-31-september-11" rel="noopener">Early Alert Grades Due, August 31-September 11 | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/calendar/event/083126/early-alert-grades-due-august-31-september-11</span></td>
+      <td class="n bad">11</td>
+      <td class="n">7</td>
+      <td class="links"><a class="pgrep" href="pages/calendar-event-083126-early-alert-grades-due-august-31-september-11.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/calendar/event/090126/online-author-talks-david-stewart" rel="noopener">Online Author Talks - David Stewart | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/calendar/event/090126/online-author-talks-david-stewart</span></td>
+      <td class="n bad">12</td>
+      <td class="n">7</td>
+      <td class="links"><a class="pgrep" href="pages/calendar-event-090126-online-author-talks-david-stewart.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/calendar/event/090226/last-day-drop-have-charges-removed-census-date" rel="noopener">Last Day to Drop &amp; have charges removed (Census Date) | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/calendar/event/090226/last-day-drop-have-charges-removed-census-date</span></td>
+      <td class="n bad">11</td>
+      <td class="n">7</td>
+      <td class="links"><a class="pgrep" href="pages/calendar-event-090226-last-day-drop-have-charges-removed-census-date.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/calendar/event/090726/labor-day-no-classes" rel="noopener">Labor Day-NO CLASSES | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/calendar/event/090726/labor-day-no-classes</span></td>
+      <td class="n bad">11</td>
+      <td class="n">7</td>
+      <td class="links"><a class="pgrep" href="pages/calendar-event-090726-labor-day-no-classes.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/calendar/event/100226/all-fall-graduation-applications-due" rel="noopener">All Fall Graduation Applications Due | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/calendar/event/100226/all-fall-graduation-applications-due</span></td>
+      <td class="n bad">11</td>
+      <td class="n">7</td>
+      <td class="links"><a class="pgrep" href="pages/calendar-event-100226-all-fall-graduation-applications-due.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/cashier" rel="noopener">Cashier | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/cashier</span></td>
+      <td class="n bad">4</td>
+      <td class="n">2</td>
+      <td class="links"><a class="pgrep" href="pages/cashier.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/clubs" rel="noopener">Student Clubs | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/clubs</span></td>
+      <td class="n bad">2</td>
+      <td class="n">12</td>
+      <td class="links"><a class="pgrep" href="pages/clubs.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/colorado-initiatives" rel="noopener">Colorado Initiatives | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/colorado-initiatives</span></td>
+      <td class="n bad">2</td>
+      <td class="n">2</td>
+      <td class="links"><a class="pgrep" href="pages/colorado-initiatives.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/concurrent-enrollment" rel="noopener">Concurrent Enrollment | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/concurrent-enrollment</span></td>
+      <td class="n bad">2</td>
+      <td class="n">2</td>
+      <td class="links"><a class="pgrep" href="pages/concurrent-enrollment.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/cost-calculator/" rel="noopener">Net Price Calculator</a> <span class="pwurl">https://njc.edu/cost-calculator/</span></td>
+      <td class="n bad">7</td>
+      <td class="n">0</td>
+      <td class="links"><a class="pgrep" href="pages/cost-calculator.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/course-schedules-transcripts-and-resources" rel="noopener">Course Schedules, Transcripts and Resources | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/course-schedules-transcripts-and-resources</span></td>
+      <td class="n bad">2</td>
+      <td class="n">2</td>
+      <td class="links"><a class="pgrep" href="pages/course-schedules-transcripts-and-resources.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/cpr-classes" rel="noopener">CPR Classes | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/cpr-classes</span></td>
+      <td class="n bad">2</td>
+      <td class="n">11</td>
+      <td class="links"><a class="pgrep" href="pages/cpr-classes.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/directory" rel="noopener">Directory | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/directory</span></td>
+      <td class="n bad">2</td>
+      <td class="n">3</td>
+      <td class="links"><a class="pgrep" href="pages/directory.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/elearning" rel="noopener">eLearning | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/elearning</span></td>
+      <td class="n bad">3</td>
+      <td class="n">2</td>
+      <td class="links"><a class="pgrep" href="pages/elearning.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/esports" rel="noopener">Esports | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/esports</span></td>
+      <td class="n bad">6</td>
+      <td class="n">2</td>
+      <td class="links"><a class="pgrep" href="pages/esports.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/facilities-use" rel="noopener">Facilities Use | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/facilities-use</span></td>
+      <td class="n bad">2</td>
+      <td class="n">2</td>
+      <td class="links"><a class="pgrep" href="pages/facilities-use.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/financial-aid-assistance" rel="noopener">Financial Aid &amp; Assistance | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/financial-aid-assistance</span></td>
+      <td class="n bad">3</td>
+      <td class="n">2</td>
+      <td class="links"><a class="pgrep" href="pages/financial-aid-assistance.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/future-students" rel="noopener">Future Students | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/future-students</span></td>
+      <td class="n bad">6</td>
+      <td class="n">10</td>
+      <td class="links"><a class="pgrep" href="pages/future-students.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/grant-development" rel="noopener">Grant Development | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/grant-development</span></td>
+      <td class="n bad">2</td>
+      <td class="n">2</td>
+      <td class="links"><a class="pgrep" href="pages/grant-development.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/honors-program" rel="noopener">Honors Program | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/honors-program</span></td>
+      <td class="n bad">2</td>
+      <td class="n">2</td>
+      <td class="links"><a class="pgrep" href="pages/honors-program.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/human-resources" rel="noopener">Human Resources | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/human-resources</span></td>
+      <td class="n bad">2</td>
+      <td class="n">2</td>
+      <td class="links"><a class="pgrep" href="pages/human-resources.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/human-resources/jobs-northeastern" rel="noopener">Human Resources - Jobs at Northeastern | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/human-resources/jobs-northeastern</span></td>
+      <td class="n bad">2</td>
+      <td class="n">2</td>
+      <td class="links"><a class="pgrep" href="pages/human-resources-jobs-northeastern.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/human-resources/title-ix-and-civil-rights" rel="noopener">Safety and Security - Title IX &amp; Civil Rights | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/human-resources/title-ix-and-civil-rights</span></td>
+      <td class="n bad">5</td>
+      <td class="n">2</td>
+      <td class="links"><a class="pgrep" href="pages/human-resources-title-ix-and-civil-rights.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/institutional-research" rel="noopener">Institutional Research | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/institutional-research</span></td>
+      <td class="n bad">5</td>
+      <td class="n">2</td>
+      <td class="links"><a class="pgrep" href="pages/institutional-research.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/institutional-research/northeastern-reports/common-data-set" rel="noopener">IR - Common Data Set | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/institutional-research/northeastern-reports/common-data-set</span></td>
+      <td class="n bad">3</td>
+      <td class="n">12</td>
+      <td class="links"><a class="pgrep" href="pages/institutional-research-northeastern-reports-common-data-set.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/institutional-research/northeastern-reports/equity-athletics" rel="noopener">Equity in Athletics | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/institutional-research/northeastern-reports/equity-athletics</span></td>
+      <td class="n bad">3</td>
+      <td class="n">2</td>
+      <td class="links"><a class="pgrep" href="pages/institutional-research-northeastern-reports-equity-athletics.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/international-students" rel="noopener">International Students | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/international-students</span></td>
+      <td class="n bad">4</td>
+      <td class="n">4</td>
+      <td class="links"><a class="pgrep" href="pages/international-students.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/it" rel="noopener">Information Technologies at Northeastern Junior College | Technology Support</a> <span class="pwurl">https://njc.edu/it</span></td>
+      <td class="n bad">3</td>
+      <td class="n">2</td>
+      <td class="links"><a class="pgrep" href="pages/it.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/livestock-judging" rel="noopener">Livestock Judging | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/livestock-judging</span></td>
+      <td class="n bad">2</td>
+      <td class="n">3</td>
+      <td class="links"><a class="pgrep" href="pages/livestock-judging.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/living-on-campus" rel="noopener">Living on Campus | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/living-on-campus</span></td>
+      <td class="n bad">2</td>
+      <td class="n">4</td>
+      <td class="links"><a class="pgrep" href="pages/living-on-campus.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/locations" rel="noopener">Locations | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/locations</span></td>
+      <td class="n bad">2</td>
+      <td class="n">1</td>
+      <td class="links"><a class="pgrep" href="pages/locations.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/marketing-and-communications" rel="noopener">Marketing and Communications | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/marketing-and-communications</span></td>
+      <td class="n bad">2</td>
+      <td class="n">2</td>
+      <td class="links"><a class="pgrep" href="pages/marketing-and-communications.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/mlc" rel="noopener">Monahan Learning Center | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/mlc</span></td>
+      <td class="n bad">2</td>
+      <td class="n">13</td>
+      <td class="links"><a class="pgrep" href="pages/mlc.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/news" rel="noopener">News | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/news</span></td>
+      <td class="n bad">2</td>
+      <td class="n">1</td>
+      <td class="links"><a class="pgrep" href="pages/news.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/news/010626/northeastern-releases-honor-roll-fall-2025-semester" rel="noopener">Northeastern Releases Honor Roll for Fall 2025 Semester | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/news/010626/northeastern-releases-honor-roll-fall-2025-semester</span></td>
+      <td class="n bad">2</td>
+      <td class="n">1</td>
+      <td class="links"><a class="pgrep" href="pages/news-010626-northeastern-releases-honor-roll-fall-2025-semester.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/news/022726/brennen-welsh-named-2026-new-century-workforce-scholar" rel="noopener">Brennen Welsh Named a 2026 New Century Workforce Scholar | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/news/022726/brennen-welsh-named-2026-new-century-workforce-scholar</span></td>
+      <td class="n bad">2</td>
+      <td class="n">1</td>
+      <td class="links"><a class="pgrep" href="pages/news-022726-brennen-welsh-named-2026-new-century-workforce-scholar.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/news/060226/northeastern-releases-honor-roll-spring-2026-semester" rel="noopener">Northeastern Releases Honor Roll for Spring 2026 Semester | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/news/060226/northeastern-releases-honor-roll-spring-2026-semester</span></td>
+      <td class="n bad">2</td>
+      <td class="n">1</td>
+      <td class="links"><a class="pgrep" href="pages/news-060226-northeastern-releases-honor-roll-spring-2026-semester.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/news/092525/northeastern-junior-college-has-four-new-faces-including-department-head" rel="noopener">Northeastern Junior College has four new faces including department head | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/news/092525/northeastern-junior-college-has-four-new-faces-including-department-head</span></td>
+      <td class="n bad">2</td>
+      <td class="n">1</td>
+      <td class="links"><a class="pgrep" href="pages/news-092525-northeastern-junior-college-has-four-new-faces-including-department-head.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/news/111425/northeastern-junior-college-making-progress-new-welcome-center" rel="noopener">Northeastern Junior College making progress on new welcome center | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/news/111425/northeastern-junior-college-making-progress-new-welcome-center</span></td>
+      <td class="n bad">2</td>
+      <td class="n">1</td>
+      <td class="links"><a class="pgrep" href="pages/news-111425-northeastern-junior-college-making-progress-new-welcome-center.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/news/111925/njc-applied-technology-campus-awarded-prestigious-leed-green-building-certification" rel="noopener">NJC Applied Technology Campus awarded prestigious LEED Green Building Certification | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/news/111925/njc-applied-technology-campus-awarded-prestigious-leed-green-building-certification</span></td>
+      <td class="n bad">2</td>
+      <td class="n">1</td>
+      <td class="links"><a class="pgrep" href="pages/news-111925-njc-applied-technology-campus-awarded-prestigious-leed-green-building-certification.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/node/2595" rel="noopener">Website Accessibility Concerns | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/node/2595</span></td>
+      <td class="n bad">2</td>
+      <td class="n">2</td>
+      <td class="links"><a class="pgrep" href="pages/node-2595.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/northeastern-junior-college-foundation" rel="noopener">Northeastern Junior College Foundation | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/northeastern-junior-college-foundation</span></td>
+      <td class="n bad">2</td>
+      <td class="n">2</td>
+      <td class="links"><a class="pgrep" href="pages/northeastern-junior-college-foundation.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/northeastern-outfitters" rel="noopener">Northeastern Outfitters | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/northeastern-outfitters</span></td>
+      <td class="n bad">2</td>
+      <td class="n">2</td>
+      <td class="links"><a class="pgrep" href="pages/northeastern-outfitters.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/novel-coronavirus-covid-19" rel="noopener">Novel Coronavirus (COVID-19) | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/novel-coronavirus-covid-19</span></td>
+      <td class="n bad">5</td>
+      <td class="n">2</td>
+      <td class="links"><a class="pgrep" href="pages/novel-coronavirus-covid-19.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/open-educational-resources" rel="noopener">Open Educational Resources | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/open-educational-resources</span></td>
+      <td class="n bad">2</td>
+      <td class="n">2</td>
+      <td class="links"><a class="pgrep" href="pages/open-educational-resources.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/privacy-policy" rel="noopener">Northeastern Privacy Policy | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/privacy-policy</span></td>
+      <td class="n bad">5</td>
+      <td class="n">1</td>
+      <td class="links"><a class="pgrep" href="pages/privacy-policy.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/program/cosmetology-0" rel="noopener">Cosmetology Salon | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/program/cosmetology-0</span></td>
+      <td class="n bad">3</td>
+      <td class="n">10</td>
+      <td class="links"><a class="pgrep" href="pages/program-cosmetology-0.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/ranch-horse-versatility" rel="noopener">Ranch Horse Versatility | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/ranch-horse-versatility</span></td>
+      <td class="n bad">2</td>
+      <td class="n">2</td>
+      <td class="links"><a class="pgrep" href="pages/ranch-horse-versatility.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/records" rel="noopener">Records | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/records</span></td>
+      <td class="n bad">3</td>
+      <td class="n">2</td>
+      <td class="links"><a class="pgrep" href="pages/records.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/records/transcript-requests" rel="noopener">Records - Transcript Requests | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/records/transcript-requests</span></td>
+      <td class="n bad">6</td>
+      <td class="n">2</td>
+      <td class="links"><a class="pgrep" href="pages/records-transcript-requests.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/registration" rel="noopener">Admissions - New Student Registration | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/registration</span></td>
+      <td class="n bad">4</td>
+      <td class="n">2</td>
+      <td class="links"><a class="pgrep" href="pages/registration.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/request-information" rel="noopener">Request more information | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/request-information</span></td>
+      <td class="n bad">2</td>
+      <td class="n">6</td>
+      <td class="links"><a class="pgrep" href="pages/request-information.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/residence-life" rel="noopener">Residence Life | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/residence-life</span></td>
+      <td class="n bad">3</td>
+      <td class="n">2</td>
+      <td class="links"><a class="pgrep" href="pages/residence-life.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/rodeo" rel="noopener">Rodeo | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/rodeo</span></td>
+      <td class="n bad">2</td>
+      <td class="n">2</td>
+      <td class="links"><a class="pgrep" href="pages/rodeo.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/rural-colorado-career-expo" rel="noopener">Rural Colorado Career Expo | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/rural-colorado-career-expo</span></td>
+      <td class="n bad">4</td>
+      <td class="n">3</td>
+      <td class="links"><a class="pgrep" href="pages/rural-colorado-career-expo.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/safety-and-security" rel="noopener">Safety and Security | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/safety-and-security</span></td>
+      <td class="n bad">2</td>
+      <td class="n">2</td>
+      <td class="links"><a class="pgrep" href="pages/safety-and-security.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/scholarships" rel="noopener">Scholarships | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/scholarships</span></td>
+      <td class="n bad">2</td>
+      <td class="n">5</td>
+      <td class="links"><a class="pgrep" href="pages/scholarships.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/search" rel="noopener">Search | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/search</span></td>
+      <td class="n bad">2</td>
+      <td class="n">1</td>
+      <td class="links"><a class="pgrep" href="pages/search.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/student-activities" rel="noopener">Student Activities | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/student-activities</span></td>
+      <td class="n bad">2</td>
+      <td class="n">1</td>
+      <td class="links"><a class="pgrep" href="pages/student-activities.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/student-government" rel="noopener">Student Government | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/student-government</span></td>
+      <td class="n bad">2</td>
+      <td class="n">2</td>
+      <td class="links"><a class="pgrep" href="pages/student-government.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/student-success-center" rel="noopener">Student Success Center | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/student-success-center</span></td>
+      <td class="n bad">7</td>
+      <td class="n">2</td>
+      <td class="links"><a class="pgrep" href="pages/student-success-center.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/visit-campus" rel="noopener">Admissions - Visit Campus | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/visit-campus</span></td>
+      <td class="n bad">5</td>
+      <td class="n">6</td>
+      <td class="links"><a class="pgrep" href="pages/visit-campus.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://njc.edu/yuma-campus" rel="noopener">Yuma Campus | Northeastern Junior College</a> <span class="pwurl">https://njc.edu/yuma-campus</span></td>
+      <td class="n bad">2</td>
+      <td class="n">2</td>
+      <td class="links"><a class="pgrep" href="pages/yuma-campus.html">Audit report</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Data</h2>
+<div class="datamenu">
+  <a href="latest.json">latest.json</a>
+  <a href="history.json">history.json</a>
+  <a href="https://github.com/ThirstyHead/njc-audit/blob/main/reports/axe-2026-08-25T06-19-50-192Z.json">Raw report (latest)</a>
+  <a href="https://github.com/ThirstyHead/njc-audit/tree/main/reports">All raw reports</a>
+</div>
+
+<footer>
+  <p><strong>About this audit.</strong> Results are produced automatically by
+  <a href="https://github.com/dequelabs/axe-core">axe-core</a> (Deque) against the WCAG 2.1 A/AA rule set,
+  on a weekly schedule, by the open-source tooling in
+  <a href="https://github.com/ThirstyHead/audit-njc.edu">ThirstyHead/audit-njc.edu</a>.
+  Automated tooling detects only a subset of accessibility failures and does not replace
+  manual or assistive-technology testing. “Needs manual review” items are results axe
+  could not determine automatically.</p>
+  <p>Generated 2026-08-25T06:19:50.776Z · <a href="https://thirstyhead.com/njc-audit/">thirstyhead.com/njc-audit/</a></p>
+</footer>
+</body>
+</html>

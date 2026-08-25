@@ -1,0 +1,5312 @@
+{
+  "siteGenerated": "2026-08-25T06:19:50.776Z",
+  "sourceRepo": "https://github.com/ThirstyHead/audit-njc.edu",
+  "report": {
+    "generated": "2026-08-25T06:19:50.192Z",
+    "tags": [
+      "wcag2a",
+      "wcag2aa",
+      "wcag21a",
+      "wcag21aa"
+    ],
+    "pages": [
+      {
+        "url": "https://njc.edu/",
+        "title": "Home Page | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/",
+        "slug": "home",
+        "violations": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          }
+        ],
+        "violationTotal": 2,
+        "incomplete": [
+          {
+            "id": "aria-hidden-focus",
+            "impact": "serious",
+            "help": "ARIA hidden element must not be focusable or contain focusable elements",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              "#video-play-"
+            ]
+          },
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 14,
+            "firstTargets": [
+              ".region-branding > .menu--header-menu.block-menu.navigation > .menu--header-menu.menu.nav > .nav-item:nth-child(1) > .give.nav-link--northeastern-junior-college-foundation[data-drupal-link-system-path=\"node/215\"]",
+              ".region-branding > .menu--header-menu.block-menu.navigation > .menu--header-menu.menu.nav > .nav-item:nth-child(2) > .access[data-uw-original-href$=\"NJC\"][aria-label=\"Access NJC - open in a new tab\"]",
+              ".region-branding > .menu--header-menu.block-menu.navigation > .menu--header-menu.menu.nav > .nav-item:nth-child(3) > .request.nav-link--request-information[href$=\"request-information\"]"
+            ]
+          },
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          },
+          {
+            "id": "video-caption",
+            "impact": "critical",
+            "help": "<video> elements must have captions",
+            "wcag": [
+              "wcag2a",
+              "wcag122"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              "#bg-video-"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/about-us",
+        "title": "About Us | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/about-us",
+        "slug": "about-us",
+        "violations": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          }
+        ],
+        "violationTotal": 2,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              "h1"
+            ]
+          },
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/about-us/accreditation",
+        "title": "Accreditation | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/about-us/accreditation",
+        "slug": "about-us-accreditation",
+        "violations": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          },
+          {
+            "id": "link-in-text-block",
+            "impact": "serious",
+            "help": "Links must be distinguishable without relying on color",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/link-in-text-block?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag141"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "a[href$=\"hlcommission.org/\"]",
+              "a[href$=\"www.cccs.edu\"]"
+            ]
+          },
+          {
+            "id": "link-name",
+            "impact": "serious",
+            "help": "Links must have discernible text",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/link-name?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag244",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "iframe[frameborder=\"0\"] #yoshkiImageLinkPopup_Link",
+              "iframe[frameborder=\"0\"] #yoshkiCopyrightLinkPopup_Link"
+            ]
+          }
+        ],
+        "violationTotal": 6,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".org"
+            ]
+          },
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/about-us/college-tour",
+        "title": "The College Tour | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/about-us/college-tour",
+        "slug": "about-us-college-tour",
+        "violations": [
+          {
+            "id": "aria-allowed-attr",
+            "impact": "critical",
+            "help": "Elements must only use supported ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-allowed-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 12,
+            "firstTargets": [
+              "#fitvid656914 iframe .ytmVideoInfoVideoTitle",
+              "#fitvid695623 iframe .ytmVideoInfoVideoTitle",
+              "#fitvid731893 iframe .ytmVideoInfoVideoTitle",
+              "#fitvid488131 iframe .ytmVideoInfoVideoTitle",
+              "#fitvid580682 iframe .ytmVideoInfoVideoTitle"
+            ]
+          },
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 14,
+            "firstTargets": [
+              "#top",
+              "#main-content",
+              "#fitvid656914 iframe #movie_player",
+              "#fitvid695623 iframe #movie_player",
+              "#fitvid731893 iframe #movie_player"
+            ]
+          },
+          {
+            "id": "button-name",
+            "impact": "critical",
+            "help": "Buttons must have discernible text",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/button-name?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 11,
+            "firstTargets": [
+              "#fitvid695623 iframe .ytmVideoInfoChannelAvatar",
+              "#fitvid731893 iframe .ytmVideoInfoChannelAvatar",
+              "#fitvid488131 iframe .ytmVideoInfoChannelAvatar",
+              "#fitvid580682 iframe .ytmVideoInfoChannelAvatar",
+              "#fitvid631984 iframe .ytmVideoInfoChannelAvatar"
+            ]
+          }
+        ],
+        "violationTotal": 37,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".org"
+            ]
+          },
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          },
+          {
+            "id": "frame-title-unique",
+            "impact": "serious",
+            "help": "Frames must have a unique title attribute",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 24,
+            "firstTargets": [
+              "#fitvid656914",
+              "#fitvid656914 iframe",
+              "#fitvid695623"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/admissions",
+        "title": "Admissions | Open Enrollment at NJC",
+        "finalUrl": "https://www.njc.edu/admissions",
+        "slug": "admissions",
+        "violations": [
+          {
+            "id": "aria-allowed-attr",
+            "impact": "critical",
+            "help": "Elements must only use supported ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-allowed-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".menu-item--expanded.dropdown.nav-item:nth-child(3) > .dropdown-toggle[data-bs-toggle=\"dropdown\"][aria-haspopup=\"true\"]"
+            ]
+          },
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          },
+          {
+            "id": "link-in-text-block",
+            "impact": "serious",
+            "help": "Links must be distinguishable without relying on color",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/link-in-text-block?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag141"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              "p:nth-child(16) > a[data-uw-rm-brl=\"PR\"]"
+            ]
+          }
+        ],
+        "violationTotal": 4,
+        "incomplete": [
+          {
+            "id": "aria-hidden-focus",
+            "impact": "serious",
+            "help": "ARIA hidden element must not be focusable or contain focusable elements",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              "div[data-slick-index=\"-3\"]"
+            ]
+          },
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 21,
+            "firstTargets": [
+              "h1",
+              "a[href$=\"#tabs-24\"]",
+              "a[href$=\"#tabs-25\"]"
+            ]
+          },
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/admissions/campus-map-directions",
+        "title": "Admissions - Campus Map Directions to Campus | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/admissions/campus-map-directions",
+        "slug": "admissions-campus-map-directions",
+        "violations": [
+          {
+            "id": "aria-allowed-attr",
+            "impact": "critical",
+            "help": "Elements must only use supported ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-allowed-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".menu-item--expanded.dropdown.nav-item:nth-child(3) > .dropdown-toggle[data-bs-toggle=\"dropdown\"][aria-haspopup=\"true\"]"
+            ]
+          },
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          }
+        ],
+        "violationTotal": 3,
+        "incomplete": [
+          {
+            "id": "aria-hidden-focus",
+            "impact": "serious",
+            "help": "ARIA hidden element must not be focusable or contain focusable elements",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              "div[data-slick-index=\"-3\"]"
+            ]
+          },
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 4,
+            "firstTargets": [
+              ".org",
+              "#virtualtour_iframe_0 .powered_by",
+              "#virtualtour_iframe_0 .yv"
+            ]
+          },
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/admissions/how-register-classes",
+        "title": "How to Register for Classes | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/admissions/how-register-classes",
+        "slug": "admissions-how-register-classes",
+        "violations": [
+          {
+            "id": "aria-allowed-attr",
+            "impact": "critical",
+            "help": "Elements must only use supported ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-allowed-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".menu-item--expanded.dropdown.nav-item:nth-child(3) > .dropdown-toggle[data-bs-toggle=\"dropdown\"][aria-haspopup=\"true\"]"
+            ]
+          },
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          },
+          {
+            "id": "image-alt",
+            "impact": "critical",
+            "help": "Images must have alternative text",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/image-alt?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag111"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              "img[width=\"340\"]"
+            ]
+          },
+          {
+            "id": "link-in-text-block",
+            "impact": "serious",
+            "help": "Links must be distinguishable without relying on color",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/link-in-text-block?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag141"
+            ],
+            "nodes": 3,
+            "firstTargets": [
+              "ul[type=\"disc\"]:nth-child(8) > li:nth-child(1) > a",
+              "a[title=\"Financial Aid \"]",
+              "p:nth-child(11) > a[target=\"_blank\"]"
+            ]
+          }
+        ],
+        "violationTotal": 7,
+        "incomplete": [
+          {
+            "id": "aria-hidden-focus",
+            "impact": "serious",
+            "help": "ARIA hidden element must not be focusable or contain focusable elements",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              "div[data-slick-index=\"-3\"]"
+            ]
+          },
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 4,
+            "firstTargets": [
+              ".org",
+              "#virtualtour_iframe_0 .powered_by",
+              "#virtualtour_iframe_0 .yv"
+            ]
+          },
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/adult-and-continuing-education-northeastern-junior-college",
+        "title": "Adult and Continuing Education at Northeastern Junior College | GED and ESL Education",
+        "finalUrl": "https://www.njc.edu/adult-and-continuing-education-northeastern-junior-college",
+        "slug": "adult-and-continuing-education-northeastern-junior-college",
+        "violations": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          }
+        ],
+        "violationTotal": 2,
+        "incomplete": [
+          {
+            "id": "aria-hidden-focus",
+            "impact": "serious",
+            "help": "ARIA hidden element must not be focusable or contain focusable elements",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              "div[data-slick-index=\"-3\"]"
+            ]
+          },
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              "h1"
+            ]
+          },
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/advisory-council",
+        "title": "Advisory Council | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/advisory-council",
+        "slug": "advisory-council",
+        "violations": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          },
+          {
+            "id": "image-alt",
+            "impact": "critical",
+            "help": "Images must have alternative text",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/image-alt?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag111"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              "img[width=\"300\"]"
+            ]
+          }
+        ],
+        "violationTotal": 3,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              "h1"
+            ]
+          },
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/alumni-association",
+        "title": "Alumni Association | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/alumni-association",
+        "slug": "alumni-association",
+        "violations": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          }
+        ],
+        "violationTotal": 2,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              "h1"
+            ]
+          },
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/apply-housing",
+        "title": "Residence Life - Apply for Housing | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/apply-housing",
+        "slug": "apply-housing",
+        "violations": [
+          {
+            "id": "aria-allowed-attr",
+            "impact": "critical",
+            "help": "Elements must only use supported ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-allowed-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".menu-item--expanded.dropdown.active > .dropdown-toggle[data-bs-toggle=\"dropdown\"][aria-haspopup=\"true\"]"
+            ]
+          },
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          },
+          {
+            "id": "link-in-text-block",
+            "impact": "serious",
+            "help": "Links must be distinguishable without relying on color",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/link-in-text-block?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag141"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              "a[href=\"https://www.njc.edu/node/2027\"]"
+            ]
+          }
+        ],
+        "violationTotal": 4,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".org"
+            ]
+          },
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          },
+          {
+            "id": "link-in-text-block",
+            "impact": "serious",
+            "help": "Links must be distinguishable without relying on color",
+            "wcag": [
+              "wcag2a",
+              "wcag141"
+            ],
+            "nodes": 3,
+            "firstTargets": [
+              "a[href$=\"mailto:kelli.moe@njc.edu\"][data-uw-rm-vglnk=\"\"]",
+              "p:nth-child(15) > a[data-uw-original-href$=\"NJC\"][href$=\"NJC\"][data-uw-rm-brl=\"PR\"]",
+              "a[data-uw-rm-brl=\"PR\"]:nth-child(4)"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/areas-of-interest",
+        "title": "Areas of Interest | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/areas-of-interest",
+        "slug": "areas-of-interest",
+        "violations": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 3,
+            "firstTargets": [
+              "#top",
+              "#main-content",
+              "p > a[aria-label=\"Open this option\"][data-uw-rm-empty-ctrl=\"\"]"
+            ]
+          }
+        ],
+        "violationTotal": 3,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 12,
+            "firstTargets": [
+              "h4[aria-level=\"2\"]",
+              "h4[aria-level=\"3\"]",
+              ".col-sm-6.col-md-4.image-square:nth-child(3) > .block[data-uw-rm-brl=\"PR\"] > .imagebg > h4"
+            ]
+          },
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/assessment",
+        "title": "Assessment | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/assessment",
+        "slug": "assessment",
+        "violations": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          }
+        ],
+        "violationTotal": 2,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              "h1"
+            ]
+          },
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/bank-colorado-event-center",
+        "title": "Bank of Colorado Event Center | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/bank-colorado-event-center",
+        "slug": "bank-colorado-event-center",
+        "violations": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          }
+        ],
+        "violationTotal": 2,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 7,
+            "firstTargets": [
+              "h1",
+              "tr:nth-child(2) > td:nth-child(2)",
+              "tr:nth-child(3) > td:nth-child(2)"
+            ]
+          },
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/cafeteria",
+        "title": "Cafeteria | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/cafeteria",
+        "slug": "cafeteria",
+        "violations": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          },
+          {
+            "id": "link-in-text-block",
+            "impact": "serious",
+            "help": "Links must be distinguishable without relying on color",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/link-in-text-block?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag141"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              "a[href$=\"njc.campus-dining.com/\"]"
+            ]
+          }
+        ],
+        "violationTotal": 3,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              "h1"
+            ]
+          },
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/calendar",
+        "title": "Events Calendar | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/calendar",
+        "slug": "calendar",
+        "violations": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          },
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=playwright",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 9,
+            "firstTargets": [
+              "a[href$=\"day\"] > .button-text",
+              "div:nth-child(2) > .grey[data-uw-original-href$=\"calendar\"][href$=\"calendar\"] > .button-text",
+              "a[href$=\"academic-calendar\"] > .button-text",
+              ".ui-datepicker-unselectable.ui-state-disabled.ui-datepicker-other-month:nth-child(1) > .ui-state-default",
+              ".ui-datepicker-unselectable.ui-state-disabled.ui-datepicker-other-month:nth-child(2) > .ui-state-default"
+            ]
+          }
+        ],
+        "violationTotal": 11,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 6,
+            "firstTargets": [
+              ".ui-datepicker-unselectable.ui-state-disabled.ui-datepicker-week-end:nth-child(7) > .ui-state-default",
+              "a[data-date=\"1\"]",
+              ".ui-priority-secondary[data-date=\"2\"][aria-current=\"false\"]"
+            ]
+          },
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > .visually-hidden"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/calendar/event/081726/fall-full-term-2026-august-17-december-11-2026",
+        "title": "Fall Full Term 2026, August 17-December 11, 2026 | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/calendar/event/081726/fall-full-term-2026-august-17-december-11-2026",
+        "slug": "calendar-event-081726-fall-full-term-2026-august-17-december-11-2026",
+        "violations": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          },
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=playwright",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 9,
+            "firstTargets": [
+              "a[href$=\"day\"] > .button-text",
+              "div:nth-child(2) > .grey[href$=\"calendar\"][data-uw-original-href$=\"calendar\"] > .button-text",
+              "a[href$=\"academic-calendar\"] > .button-text",
+              ".ui-datepicker-unselectable.ui-state-disabled.ui-datepicker-other-month:nth-child(1) > .ui-state-default",
+              ".ui-datepicker-unselectable.ui-state-disabled.ui-datepicker-other-month:nth-child(2) > .ui-state-default"
+            ]
+          }
+        ],
+        "violationTotal": 11,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 6,
+            "firstTargets": [
+              ".ui-datepicker-unselectable.ui-state-disabled.ui-datepicker-week-end:nth-child(7) > .ui-state-default",
+              "a[data-date=\"1\"]",
+              ".ui-priority-secondary[data-date=\"2\"][data-uw-original-href=\"#\"]"
+            ]
+          },
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/calendar/event/082426/no-show-deadline",
+        "title": "No-Show Deadline | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/calendar/event/082426/no-show-deadline",
+        "slug": "calendar-event-082426-no-show-deadline",
+        "violations": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          },
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=playwright",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 9,
+            "firstTargets": [
+              "a[href$=\"day\"] > .button-text",
+              "div:nth-child(2) > .grey[href$=\"calendar\"][data-uw-original-href$=\"calendar\"] > .button-text",
+              "a[href$=\"academic-calendar\"] > .button-text",
+              ".ui-datepicker-unselectable.ui-state-disabled.ui-datepicker-other-month:nth-child(1) > .ui-state-default",
+              ".ui-datepicker-unselectable.ui-state-disabled.ui-datepicker-other-month:nth-child(2) > .ui-state-default"
+            ]
+          }
+        ],
+        "violationTotal": 11,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 6,
+            "firstTargets": [
+              ".ui-datepicker-unselectable.ui-state-disabled.ui-datepicker-week-end:nth-child(7) > .ui-state-default",
+              "a[data-date=\"1\"]",
+              ".ui-priority-secondary[data-date=\"2\"][aria-current=\"false\"]"
+            ]
+          },
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/calendar/event/082526/online-author-talks-beronda-montgomery",
+        "title": "Online Author Talks - Beronda Montgomery | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/calendar/event/082526/online-author-talks-beronda-montgomery",
+        "slug": "calendar-event-082526-online-author-talks-beronda-montgomery",
+        "violations": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          },
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=playwright",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 9,
+            "firstTargets": [
+              "a[href$=\"day\"] > .button-text",
+              "div:nth-child(2) > .grey[href$=\"calendar\"][data-uw-original-href$=\"calendar\"] > .button-text",
+              "a[href$=\"academic-calendar\"] > .button-text",
+              ".ui-datepicker-unselectable.ui-state-disabled.ui-datepicker-other-month:nth-child(1) > .ui-state-default",
+              ".ui-datepicker-unselectable.ui-state-disabled.ui-datepicker-other-month:nth-child(2) > .ui-state-default"
+            ]
+          },
+          {
+            "id": "link-in-text-block",
+            "impact": "serious",
+            "help": "Links must be distinguishable without relying on color",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/link-in-text-block?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag141"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".text-formatted > a[href$=\"njc\"]"
+            ]
+          }
+        ],
+        "violationTotal": 12,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 6,
+            "firstTargets": [
+              ".ui-datepicker-unselectable.ui-state-disabled.ui-datepicker-week-end:nth-child(7) > .ui-state-default",
+              "a[data-date=\"1\"]",
+              ".ui-priority-secondary[data-date=\"2\"][aria-current=\"false\"]"
+            ]
+          },
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/calendar/event/082726/online-author-talks-lucy-foley",
+        "title": "Online Author Talks - Lucy Foley | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/calendar/event/082726/online-author-talks-lucy-foley",
+        "slug": "calendar-event-082726-online-author-talks-lucy-foley",
+        "violations": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          },
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=playwright",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 9,
+            "firstTargets": [
+              "a[href$=\"day\"] > .button-text",
+              "div:nth-child(2) > .grey[href$=\"calendar\"][data-uw-original-href$=\"calendar\"] > .button-text",
+              "a[href$=\"academic-calendar\"] > .button-text",
+              ".ui-datepicker-unselectable.ui-state-disabled.ui-datepicker-other-month:nth-child(1) > .ui-state-default",
+              ".ui-datepicker-unselectable.ui-state-disabled.ui-datepicker-other-month:nth-child(2) > .ui-state-default"
+            ]
+          },
+          {
+            "id": "link-in-text-block",
+            "impact": "serious",
+            "help": "Links must be distinguishable without relying on color",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/link-in-text-block?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag141"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".text-formatted > a[href$=\"njc\"]"
+            ]
+          }
+        ],
+        "violationTotal": 12,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 6,
+            "firstTargets": [
+              ".ui-datepicker-unselectable.ui-state-disabled.ui-datepicker-week-end:nth-child(7) > .ui-state-default",
+              "a[data-date=\"1\"]",
+              ".ui-priority-secondary[data-date=\"2\"][aria-current=\"false\"]"
+            ]
+          },
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/calendar/event/083126/early-alert-grades-due-august-31-september-11",
+        "title": "Early Alert Grades Due, August 31-September 11 | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/calendar/event/083126/early-alert-grades-due-august-31-september-11",
+        "slug": "calendar-event-083126-early-alert-grades-due-august-31-september-11",
+        "violations": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          },
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=playwright",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 9,
+            "firstTargets": [
+              "a[href$=\"day\"] > .button-text",
+              "div:nth-child(2) > .grey[href$=\"calendar\"][data-uw-original-href$=\"calendar\"] > .button-text",
+              "a[href$=\"academic-calendar\"] > .button-text",
+              ".ui-datepicker-unselectable.ui-state-disabled.ui-datepicker-other-month:nth-child(1) > .ui-state-default",
+              ".ui-datepicker-unselectable.ui-state-disabled.ui-datepicker-other-month:nth-child(2) > .ui-state-default"
+            ]
+          }
+        ],
+        "violationTotal": 11,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 6,
+            "firstTargets": [
+              ".ui-datepicker-unselectable.ui-state-disabled.ui-datepicker-week-end:nth-child(7) > .ui-state-default",
+              "a[data-date=\"1\"]",
+              ".ui-priority-secondary[data-date=\"2\"][aria-current=\"false\"]"
+            ]
+          },
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/calendar/event/090126/online-author-talks-david-stewart",
+        "title": "Online Author Talks - David Stewart | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/calendar/event/090126/online-author-talks-david-stewart",
+        "slug": "calendar-event-090126-online-author-talks-david-stewart",
+        "violations": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          },
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=playwright",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 9,
+            "firstTargets": [
+              "a[href$=\"day\"] > .button-text",
+              "div:nth-child(2) > .grey[href$=\"calendar\"][data-uw-original-href$=\"calendar\"] > .button-text",
+              "a[href$=\"academic-calendar\"] > .button-text",
+              ".ui-datepicker-unselectable.ui-state-disabled.ui-datepicker-other-month:nth-child(1) > .ui-state-default",
+              ".ui-datepicker-unselectable.ui-state-disabled.ui-datepicker-other-month:nth-child(2) > .ui-state-default"
+            ]
+          },
+          {
+            "id": "link-in-text-block",
+            "impact": "serious",
+            "help": "Links must be distinguishable without relying on color",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/link-in-text-block?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag141"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".text-formatted > a[href$=\"njc\"]"
+            ]
+          }
+        ],
+        "violationTotal": 12,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 6,
+            "firstTargets": [
+              ".ui-datepicker-unselectable.ui-state-disabled.ui-datepicker-week-end:nth-child(7) > .ui-state-default",
+              "a[data-date=\"1\"]",
+              ".ui-priority-secondary[data-date=\"2\"][aria-current=\"false\"]"
+            ]
+          },
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/calendar/event/090226/last-day-drop-have-charges-removed-census-date",
+        "title": "Last Day to Drop & have charges removed (Census Date) | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/calendar/event/090226/last-day-drop-have-charges-removed-census-date",
+        "slug": "calendar-event-090226-last-day-drop-have-charges-removed-census-date",
+        "violations": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          },
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=playwright",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 9,
+            "firstTargets": [
+              "a[href$=\"day\"] > .button-text",
+              "div:nth-child(2) > .grey[href$=\"calendar\"][data-uw-original-href$=\"calendar\"] > .button-text",
+              "a[href$=\"academic-calendar\"] > .button-text",
+              ".ui-datepicker-unselectable.ui-state-disabled.ui-datepicker-other-month:nth-child(1) > .ui-state-default",
+              ".ui-datepicker-unselectable.ui-state-disabled.ui-datepicker-other-month:nth-child(2) > .ui-state-default"
+            ]
+          }
+        ],
+        "violationTotal": 11,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 6,
+            "firstTargets": [
+              ".ui-datepicker-unselectable.ui-state-disabled.ui-datepicker-week-end:nth-child(7) > .ui-state-default",
+              "a[data-date=\"1\"]",
+              ".ui-priority-secondary[data-date=\"2\"][aria-current=\"false\"]"
+            ]
+          },
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/calendar/event/090726/labor-day-no-classes",
+        "title": "Labor Day-NO CLASSES | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/calendar/event/090726/labor-day-no-classes",
+        "slug": "calendar-event-090726-labor-day-no-classes",
+        "violations": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          },
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=playwright",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 9,
+            "firstTargets": [
+              "a[href$=\"day\"] > .button-text",
+              "div:nth-child(2) > .grey[href$=\"calendar\"][data-uw-original-href$=\"calendar\"] > .button-text",
+              "a[href$=\"academic-calendar\"] > .button-text",
+              ".ui-datepicker-unselectable.ui-state-disabled.ui-datepicker-other-month:nth-child(1) > .ui-state-default",
+              ".ui-datepicker-unselectable.ui-state-disabled.ui-datepicker-other-month:nth-child(2) > .ui-state-default"
+            ]
+          }
+        ],
+        "violationTotal": 11,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 6,
+            "firstTargets": [
+              ".ui-datepicker-unselectable.ui-state-disabled.ui-datepicker-week-end:nth-child(7) > .ui-state-default",
+              "a[data-date=\"1\"]",
+              ".ui-priority-secondary[data-date=\"2\"][aria-current=\"false\"]"
+            ]
+          },
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/calendar/event/100226/all-fall-graduation-applications-due",
+        "title": "All Fall Graduation Applications Due | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/calendar/event/100226/all-fall-graduation-applications-due",
+        "slug": "calendar-event-100226-all-fall-graduation-applications-due",
+        "violations": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          },
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=playwright",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 9,
+            "firstTargets": [
+              "a[href$=\"day\"] > .button-text",
+              "div:nth-child(2) > .grey[href$=\"calendar\"][data-uw-original-href$=\"calendar\"] > .button-text",
+              "a[href$=\"academic-calendar\"] > .button-text",
+              ".ui-datepicker-unselectable.ui-state-disabled.ui-datepicker-other-month:nth-child(1) > .ui-state-default",
+              ".ui-datepicker-unselectable.ui-state-disabled.ui-datepicker-other-month:nth-child(2) > .ui-state-default"
+            ]
+          }
+        ],
+        "violationTotal": 11,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 6,
+            "firstTargets": [
+              ".ui-datepicker-unselectable.ui-state-disabled.ui-datepicker-week-end:nth-child(7) > .ui-state-default",
+              "a[data-date=\"1\"]",
+              ".ui-priority-secondary[data-date=\"2\"][aria-current=\"false\"]"
+            ]
+          },
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/cashier",
+        "title": "Cashier | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/cashier",
+        "slug": "cashier",
+        "violations": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          },
+          {
+            "id": "link-in-text-block",
+            "impact": "serious",
+            "help": "Links must be distinguishable without relying on color",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/link-in-text-block?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag141"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              ".text-formatted > p:nth-child(2) > a[data-uw-rm-brl=\"PR\"]",
+              "blockquote > p:nth-child(2) > a[data-uw-rm-brl=\"PR\"]"
+            ]
+          }
+        ],
+        "violationTotal": 4,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              "h1"
+            ]
+          },
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/clubs",
+        "title": "Student Clubs | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/clubs",
+        "slug": "clubs",
+        "violations": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          }
+        ],
+        "violationTotal": 2,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 11,
+            "firstTargets": [
+              "h4[aria-level=\"3\"]",
+              ".col-md-4.col-sm-6.image-square:nth-child(2) > .block[data-uw-rm-brl=\"PR\"] > .imagebg > h4",
+              ".col-md-4.col-sm-6.image-square:nth-child(3) > .block[data-uw-rm-brl=\"PR\"] > .imagebg > h4"
+            ]
+          },
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/colorado-initiatives",
+        "title": "Colorado Initiatives | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/colorado-initiatives",
+        "slug": "colorado-initiatives",
+        "violations": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          }
+        ],
+        "violationTotal": 2,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              "h1"
+            ]
+          },
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/concurrent-enrollment",
+        "title": "Concurrent Enrollment | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/concurrent-enrollment",
+        "slug": "concurrent-enrollment",
+        "violations": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          }
+        ],
+        "violationTotal": 2,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              "h1"
+            ]
+          },
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/cost-calculator/",
+        "title": "Net Price Calculator",
+        "finalUrl": "https://njc.edu/cost-calculator/",
+        "slug": "cost-calculator",
+        "violations": [
+          {
+            "id": "aria-required-parent",
+            "impact": "critical",
+            "help": "Certain ARIA roles must be contained by particular parents",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-required-parent?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag131"
+            ],
+            "nodes": 6,
+            "firstTargets": [
+              ".active",
+              ".npc-step[title=\"\"][role=\"option\"]:nth-child(2)",
+              ".npc-step[title=\"\"][role=\"option\"]:nth-child(3)",
+              ".npc-step[title=\"\"][role=\"option\"]:nth-child(4)",
+              ".npc-step[title=\"\"][role=\"option\"]:nth-child(5)"
+            ]
+          },
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=playwright",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".warning-text"
+            ]
+          }
+        ],
+        "violationTotal": 7,
+        "incomplete": []
+      },
+      {
+        "url": "https://njc.edu/course-schedules-transcripts-and-resources",
+        "title": "Course Schedules, Transcripts and Resources | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/course-schedules-transcripts-and-resources",
+        "slug": "course-schedules-transcripts-and-resources",
+        "violations": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          }
+        ],
+        "violationTotal": 2,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              "h1"
+            ]
+          },
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/cpr-classes",
+        "title": "CPR Classes | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/cpr-classes",
+        "slug": "cpr-classes",
+        "violations": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          }
+        ],
+        "violationTotal": 2,
+        "incomplete": [
+          {
+            "id": "aria-hidden-focus",
+            "impact": "serious",
+            "help": "ARIA hidden element must not be focusable or contain focusable elements",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              "div[data-slick-index=\"-3\"]"
+            ]
+          },
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 9,
+            "firstTargets": [
+              ".region-branding > .menu--header-menu.block-menu.navigation > .menu--header-menu.menu.nav > .nav-item:nth-child(1) > .give.nav-link--northeastern-junior-college-foundation[data-drupal-link-system-path=\"node/215\"]",
+              ".region-branding > .menu--header-menu.block-menu.navigation > .menu--header-menu.menu.nav > .nav-item:nth-child(2) > .access[data-uw-original-href$=\"NJC\"][aria-label=\"Access NJC - open in a new tab\"]",
+              ".region-branding > .menu--header-menu.block-menu.navigation > .menu--header-menu.menu.nav > .nav-item:nth-child(3) > .request.nav-link--request-information[href$=\"request-information\"]"
+            ]
+          },
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/directory",
+        "title": "Directory | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/directory",
+        "slug": "directory",
+        "violations": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          }
+        ],
+        "violationTotal": 2,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#edit-dept",
+              "#edit-aos"
+            ]
+          },
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/elearning",
+        "title": "eLearning | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/elearning",
+        "slug": "elearning",
+        "violations": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          },
+          {
+            "id": "link-in-text-block",
+            "impact": "serious",
+            "help": "Links must be distinguishable without relying on color",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/link-in-text-block?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag141"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              "p:nth-child(7) > a[data-uw-rm-brl=\"PR\"]"
+            ]
+          }
+        ],
+        "violationTotal": 3,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              "h1"
+            ]
+          },
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/esports",
+        "title": "Esports | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/esports",
+        "slug": "esports",
+        "violations": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          },
+          {
+            "id": "link-in-text-block",
+            "impact": "serious",
+            "help": "Links must be distinguishable without relying on color",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/link-in-text-block?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag141"
+            ],
+            "nodes": 4,
+            "firstTargets": [
+              "p:nth-child(5) > a[data-uw-rm-brl=\"PR\"]:nth-child(1)",
+              "p:nth-child(5) > a[data-uw-rm-brl=\"PR\"]:nth-child(2)",
+              "a[href=\"mailto:Kade.Roelle@njc.edu\"]",
+              "a[href$=\"mailto:Jason.Ha@njc.edu\"]"
+            ]
+          }
+        ],
+        "violationTotal": 6,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              "h1"
+            ]
+          },
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/facilities-use",
+        "title": "Facilities Use | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/facilities-use",
+        "slug": "facilities-use",
+        "violations": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          }
+        ],
+        "violationTotal": 2,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              "h1"
+            ]
+          },
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/financial-aid-assistance",
+        "title": "Financial Aid & Assistance | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/financial-aid-assistance",
+        "slug": "financial-aid-assistance",
+        "violations": [
+          {
+            "id": "aria-allowed-attr",
+            "impact": "critical",
+            "help": "Elements must only use supported ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-allowed-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".dropdown-toggle.nav-link-[data-bs-toggle=\"dropdown\"]"
+            ]
+          },
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          }
+        ],
+        "violationTotal": 3,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              "h1"
+            ]
+          },
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/future-students",
+        "title": "Future Students | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/future-students",
+        "slug": "future-students",
+        "violations": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          },
+          {
+            "id": "link-name",
+            "impact": "serious",
+            "help": "Links must have discernible text",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/link-name?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag244",
+              "wcag412"
+            ],
+            "nodes": 4,
+            "firstTargets": [
+              ".overlay-box-link[href$=\"visit-campus\"]",
+              ".overlay-box-link[href$=\"mlc\"]",
+              ".overlay-box-link[href$=\"living-on-campus\"]",
+              "a[href$=\"student-activities\"]"
+            ]
+          }
+        ],
+        "violationTotal": 6,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 9,
+            "firstTargets": [
+              "h4",
+              ".field--name-field-paragraph-content.text-formatted.field--type-text-long > p:nth-child(2)",
+              ".col-md-4.col:nth-child(1) > .cost-point-values"
+            ]
+          },
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/grant-development",
+        "title": "Grant Development | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/grant-development",
+        "slug": "grant-development",
+        "violations": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          }
+        ],
+        "violationTotal": 2,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              "h1"
+            ]
+          },
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/honors-program",
+        "title": "Honors Program | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/honors-program",
+        "slug": "honors-program",
+        "violations": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          }
+        ],
+        "violationTotal": 2,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              "h1"
+            ]
+          },
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/human-resources",
+        "title": "Human Resources | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/human-resources",
+        "slug": "human-resources",
+        "violations": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          }
+        ],
+        "violationTotal": 2,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              "h1"
+            ]
+          },
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/human-resources/jobs-northeastern",
+        "title": "Human Resources - Jobs at Northeastern | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/human-resources/jobs-northeastern",
+        "slug": "human-resources-jobs-northeastern",
+        "violations": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          }
+        ],
+        "violationTotal": 2,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".org"
+            ]
+          },
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/human-resources/title-ix-and-civil-rights",
+        "title": "Safety and Security - Title IX & Civil Rights | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/human-resources/title-ix-and-civil-rights",
+        "slug": "human-resources-title-ix-and-civil-rights",
+        "violations": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          },
+          {
+            "id": "link-in-text-block",
+            "impact": "serious",
+            "help": "Links must be distinguishable without relying on color",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/link-in-text-block?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag141"
+            ],
+            "nodes": 3,
+            "firstTargets": [
+              "ul:nth-child(4) > li:nth-child(7) > a[data-uw-rm-brl=\"PR\"]",
+              "a[href$=\"www.pandys.org\"]",
+              "p:nth-child(60) > a"
+            ]
+          }
+        ],
+        "violationTotal": 5,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".org"
+            ]
+          },
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > .visually-hidden"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/institutional-research",
+        "title": "Institutional Research | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/institutional-research",
+        "slug": "institutional-research",
+        "violations": [
+          {
+            "id": "aria-allowed-attr",
+            "impact": "critical",
+            "help": "Elements must only use supported ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-allowed-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".menu-item--expanded.dropdown.nav-item:nth-child(5) > .dropdown-toggle[data-bs-toggle=\"dropdown\"][aria-haspopup=\"true\"]"
+            ]
+          },
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          },
+          {
+            "id": "link-in-text-block",
+            "impact": "serious",
+            "help": "Links must be distinguishable without relying on color",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/link-in-text-block?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag141"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "p:nth-child(9) > a[data-uw-rm-ext-link=\"\"][target=\"_blank\"][data-uw-rm-brl=\"PR\"]",
+              "a[title=\"FERPA\"]"
+            ]
+          }
+        ],
+        "violationTotal": 5,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              "h1"
+            ]
+          },
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/institutional-research/northeastern-reports/common-data-set",
+        "title": "IR - Common Data Set | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/institutional-research/northeastern-reports/common-data-set",
+        "slug": "institutional-research-northeastern-reports-common-data-set",
+        "violations": [
+          {
+            "id": "aria-allowed-attr",
+            "impact": "critical",
+            "help": "Elements must only use supported ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-allowed-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".menu-item--expanded.dropdown.nav-item:nth-child(5) > .dropdown-toggle[data-bs-toggle=\"dropdown\"][aria-haspopup=\"true\"]"
+            ]
+          },
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          }
+        ],
+        "violationTotal": 3,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 11,
+            "firstTargets": [
+              ".org",
+              "a[href$=\"#tabs-13\"]",
+              "a[href$=\"#tabs-14\"]"
+            ]
+          },
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/institutional-research/northeastern-reports/equity-athletics",
+        "title": "Equity in Athletics | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/institutional-research/northeastern-reports/equity-athletics",
+        "slug": "institutional-research-northeastern-reports-equity-athletics",
+        "violations": [
+          {
+            "id": "aria-allowed-attr",
+            "impact": "critical",
+            "help": "Elements must only use supported ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-allowed-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".menu-item--expanded.dropdown.nav-item:nth-child(5) > .dropdown-toggle[data-bs-toggle=\"dropdown\"][aria-haspopup=\"true\"]"
+            ]
+          },
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          }
+        ],
+        "violationTotal": 3,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".org"
+            ]
+          },
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/international-students",
+        "title": "International Students | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/international-students",
+        "slug": "international-students",
+        "violations": [
+          {
+            "id": "aria-allowed-attr",
+            "impact": "critical",
+            "help": "Elements must only use supported ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-allowed-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              "#fitvid12625 iframe .ytmVideoInfoVideoTitle"
+            ]
+          },
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 3,
+            "firstTargets": [
+              "#top",
+              "#main-content",
+              "#fitvid12625 iframe #movie_player"
+            ]
+          }
+        ],
+        "violationTotal": 4,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              "h1"
+            ]
+          },
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          },
+          {
+            "id": "frame-title-unique",
+            "impact": "serious",
+            "help": "Frames must have a unique title attribute",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#fitvid12625",
+              "#fitvid12625 iframe"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/it",
+        "title": "Information Technologies at Northeastern Junior College | Technology Support",
+        "finalUrl": "https://www.njc.edu/it",
+        "slug": "it",
+        "violations": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          },
+          {
+            "id": "link-in-text-block",
+            "impact": "serious",
+            "help": "Links must be distinguishable without relying on color",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/link-in-text-block?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag141"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              "a[href$=\"mailto:it@njc.edu\"]"
+            ]
+          }
+        ],
+        "violationTotal": 3,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              "h1"
+            ]
+          },
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/livestock-judging",
+        "title": "Livestock Judging | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/livestock-judging",
+        "slug": "livestock-judging",
+        "violations": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          }
+        ],
+        "violationTotal": 2,
+        "incomplete": [
+          {
+            "id": "aria-hidden-focus",
+            "impact": "serious",
+            "help": "ARIA hidden element must not be focusable or contain focusable elements",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              "div[data-slick-index=\"-3\"]"
+            ]
+          },
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              "h1"
+            ]
+          },
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/living-on-campus",
+        "title": "Living on Campus | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/living-on-campus",
+        "slug": "living-on-campus",
+        "violations": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          }
+        ],
+        "violationTotal": 2,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 3,
+            "firstTargets": [
+              "h4[aria-level=\"2\"]",
+              "h4[aria-level=\"3\"]",
+              ".fadeInUp.col-sm-6.col-lg-4:nth-child(3) > .block[data-uw-rm-brl=\"PR\"] > .imagebg > h4"
+            ]
+          },
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/locations",
+        "title": "Locations | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/locations",
+        "slug": "locations",
+        "violations": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          }
+        ],
+        "violationTotal": 2,
+        "incomplete": [
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/marketing-and-communications",
+        "title": "Marketing and Communications | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/marketing-and-communications",
+        "slug": "marketing-and-communications",
+        "violations": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          }
+        ],
+        "violationTotal": 2,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              "h1"
+            ]
+          },
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/mlc",
+        "title": "Monahan Learning Center | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/mlc",
+        "slug": "mlc",
+        "violations": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          }
+        ],
+        "violationTotal": 2,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 12,
+            "firstTargets": [
+              ".field--name-field-paragraph-subtitle",
+              "h1",
+              "a[href$=\"library\"]"
+            ]
+          },
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/news",
+        "title": "News | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/news",
+        "slug": "news",
+        "violations": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          }
+        ],
+        "violationTotal": 2,
+        "incomplete": [
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/news/010626/northeastern-releases-honor-roll-fall-2025-semester",
+        "title": "Northeastern Releases Honor Roll for Fall 2025 Semester | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/news/010626/northeastern-releases-honor-roll-fall-2025-semester",
+        "slug": "news-010626-northeastern-releases-honor-roll-fall-2025-semester",
+        "violations": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          }
+        ],
+        "violationTotal": 2,
+        "incomplete": [
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/news/022726/brennen-welsh-named-2026-new-century-workforce-scholar",
+        "title": "Brennen Welsh Named a 2026 New Century Workforce Scholar | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/news/022726/brennen-welsh-named-2026-new-century-workforce-scholar",
+        "slug": "news-022726-brennen-welsh-named-2026-new-century-workforce-scholar",
+        "violations": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          }
+        ],
+        "violationTotal": 2,
+        "incomplete": [
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/news/060226/northeastern-releases-honor-roll-spring-2026-semester",
+        "title": "Northeastern Releases Honor Roll for Spring 2026 Semester | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/news/060226/northeastern-releases-honor-roll-spring-2026-semester",
+        "slug": "news-060226-northeastern-releases-honor-roll-spring-2026-semester",
+        "violations": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          }
+        ],
+        "violationTotal": 2,
+        "incomplete": [
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/news/092525/northeastern-junior-college-has-four-new-faces-including-department-head",
+        "title": "Northeastern Junior College has four new faces including department head | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/news/092525/northeastern-junior-college-has-four-new-faces-including-department-head",
+        "slug": "news-092525-northeastern-junior-college-has-four-new-faces-including-department-head",
+        "violations": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          }
+        ],
+        "violationTotal": 2,
+        "incomplete": [
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/news/111425/northeastern-junior-college-making-progress-new-welcome-center",
+        "title": "Northeastern Junior College making progress on new welcome center | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/news/111425/northeastern-junior-college-making-progress-new-welcome-center",
+        "slug": "news-111425-northeastern-junior-college-making-progress-new-welcome-center",
+        "violations": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          }
+        ],
+        "violationTotal": 2,
+        "incomplete": [
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/news/111925/njc-applied-technology-campus-awarded-prestigious-leed-green-building-certification",
+        "title": "NJC Applied Technology Campus awarded prestigious LEED Green Building Certification | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/news/111925/njc-applied-technology-campus-awarded-prestigious-leed-green-building-certification",
+        "slug": "news-111925-njc-applied-technology-campus-awarded-prestigious-leed-green-building-certification",
+        "violations": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          }
+        ],
+        "violationTotal": 2,
+        "incomplete": [
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/node/2595",
+        "title": "Website Accessibility Concerns | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/node/2595",
+        "slug": "node-2595",
+        "violations": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          }
+        ],
+        "violationTotal": 2,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".captcha__title"
+            ]
+          },
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/northeastern-junior-college-foundation",
+        "title": "Northeastern Junior College Foundation | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/northeastern-junior-college-foundation",
+        "slug": "northeastern-junior-college-foundation",
+        "violations": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          }
+        ],
+        "violationTotal": 2,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              "h1"
+            ]
+          },
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/northeastern-outfitters",
+        "title": "Northeastern Outfitters | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/northeastern-outfitters",
+        "slug": "northeastern-outfitters",
+        "violations": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          }
+        ],
+        "violationTotal": 2,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              "h1"
+            ]
+          },
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/novel-coronavirus-covid-19",
+        "title": "Novel Coronavirus (COVID-19) | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/novel-coronavirus-covid-19",
+        "slug": "novel-coronavirus-covid-19",
+        "violations": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          },
+          {
+            "id": "link-in-text-block",
+            "impact": "serious",
+            "help": "Links must be distinguishable without relying on color",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/link-in-text-block?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag141"
+            ],
+            "nodes": 3,
+            "firstTargets": [
+              "p:nth-child(13) > a[href$=\"covid-19\"]",
+              "p:nth-child(14) > a[href$=\"covid19.colorado.gov/\"][data-uw-original-href$=\"covid19.colorado.gov/\"][data-uw-rm-brl=\"PR\"]",
+              "p:nth-child(15) > a[data-uw-rm-brl=\"PR\"]"
+            ]
+          }
+        ],
+        "violationTotal": 5,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              "h1"
+            ]
+          },
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/open-educational-resources",
+        "title": "Open Educational Resources | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/open-educational-resources",
+        "slug": "open-educational-resources",
+        "violations": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          }
+        ],
+        "violationTotal": 2,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              "h1"
+            ]
+          },
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/privacy-policy",
+        "title": "Northeastern Privacy Policy | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/privacy-policy",
+        "slug": "privacy-policy",
+        "violations": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          },
+          {
+            "id": "link-in-text-block",
+            "impact": "serious",
+            "help": "Links must be distinguishable without relying on color",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/link-in-text-block?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag141"
+            ],
+            "nodes": 3,
+            "firstTargets": [
+              "a[href$=\"www.njc.edu\"]",
+              "p:nth-child(14) > a[data-uw-rm-brl=\"PR\"]",
+              "p:nth-child(21) > a[data-uw-rm-brl=\"PR\"]"
+            ]
+          }
+        ],
+        "violationTotal": 5,
+        "incomplete": [
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/program/cosmetology-0",
+        "title": "Cosmetology Salon | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/program/cosmetology-0",
+        "slug": "program-cosmetology-0",
+        "violations": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          },
+          {
+            "id": "link-in-text-block",
+            "impact": "serious",
+            "help": "Links must be distinguishable without relying on color",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/link-in-text-block?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag141"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              "a[href=\"mailto:Tyanne.Kembel@njc.edu\"]"
+            ]
+          }
+        ],
+        "violationTotal": 3,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 9,
+            "firstTargets": [
+              ".region-branding > .menu--header-menu.block-menu.navigation > .menu--header-menu.menu.nav > .nav-item:nth-child(1) > .give.nav-link--northeastern-junior-college-foundation[data-drupal-link-system-path=\"node/215\"]",
+              ".region-branding > .menu--header-menu.block-menu.navigation > .menu--header-menu.menu.nav > .nav-item:nth-child(2) > .access[data-uw-original-href$=\"NJC\"][aria-label=\"Access NJC - open in a new tab\"]",
+              ".region-branding > .menu--header-menu.block-menu.navigation > .menu--header-menu.menu.nav > .nav-item:nth-child(3) > .request.nav-link--request-information[href$=\"request-information\"]"
+            ]
+          },
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/ranch-horse-versatility",
+        "title": "Ranch Horse Versatility | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/ranch-horse-versatility",
+        "slug": "ranch-horse-versatility",
+        "violations": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          }
+        ],
+        "violationTotal": 2,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              "h1"
+            ]
+          },
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/records",
+        "title": "Records | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/records",
+        "slug": "records",
+        "violations": [
+          {
+            "id": "aria-allowed-attr",
+            "impact": "critical",
+            "help": "Elements must only use supported ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-allowed-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".dropdown-toggle"
+            ]
+          },
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          }
+        ],
+        "violationTotal": 3,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              "h1"
+            ]
+          },
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/records/transcript-requests",
+        "title": "Records - Transcript Requests | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/records/transcript-requests",
+        "slug": "records-transcript-requests",
+        "violations": [
+          {
+            "id": "aria-allowed-attr",
+            "impact": "critical",
+            "help": "Elements must only use supported ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-allowed-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".dropdown-toggle"
+            ]
+          },
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          },
+          {
+            "id": "link-in-text-block",
+            "impact": "serious",
+            "help": "Links must be distinguishable without relying on color",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/link-in-text-block?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag141"
+            ],
+            "nodes": 3,
+            "firstTargets": [
+              "a[data-uw-rm-vglnk=\"\"]",
+              "p:nth-child(23) > a",
+              "a[title=\"Opens a new window\"]"
+            ]
+          }
+        ],
+        "violationTotal": 6,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".org"
+            ]
+          },
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/registration",
+        "title": "Admissions - New Student Registration | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/registration",
+        "slug": "registration",
+        "violations": [
+          {
+            "id": "aria-allowed-attr",
+            "impact": "critical",
+            "help": "Elements must only use supported ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-allowed-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".menu-item--expanded.dropdown.active > .dropdown-toggle[data-bs-toggle=\"dropdown\"][aria-haspopup=\"true\"]"
+            ]
+          },
+          {
+            "id": "aria-hidden-focus",
+            "impact": "serious",
+            "help": "ARIA hidden element must not be focusable or contain focusable elements",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-hidden-focus?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              "div[data-slick-index=\"-3\"]"
+            ]
+          },
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          }
+        ],
+        "violationTotal": 4,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".org"
+            ]
+          },
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/request-information",
+        "title": "Request more information | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/request-information",
+        "slug": "request-information",
+        "violations": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          }
+        ],
+        "violationTotal": 2,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 5,
+            "firstTargets": [
+              "#edit-address-state-province",
+              "#edit-address-country",
+              "#edit-entry-term"
+            ]
+          },
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/residence-life",
+        "title": "Residence Life | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/residence-life",
+        "slug": "residence-life",
+        "violations": [
+          {
+            "id": "aria-allowed-attr",
+            "impact": "critical",
+            "help": "Elements must only use supported ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-allowed-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".menu-item--expanded.dropdown.nav-item:nth-child(5) > .dropdown-toggle[data-bs-toggle=\"dropdown\"][aria-haspopup=\"true\"]"
+            ]
+          },
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          }
+        ],
+        "violationTotal": 3,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              "h1"
+            ]
+          },
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/rodeo",
+        "title": "Rodeo | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/rodeo",
+        "slug": "rodeo",
+        "violations": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          }
+        ],
+        "violationTotal": 2,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              "h1"
+            ]
+          },
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/rural-colorado-career-expo",
+        "title": "Rural Colorado Career Expo | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/rural-colorado-career-expo",
+        "slug": "rural-colorado-career-expo",
+        "violations": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          },
+          {
+            "id": "link-in-text-block",
+            "impact": "serious",
+            "help": "Links must be distinguishable without relying on color",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/link-in-text-block?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag141"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              ".layout__region--first > .paragraph--type--text-box-new.paragraph.paragraph--view-mode--full > .paragraph-inner > .text-text > .field--name-field-paragraph-content.field--type-text-long.text-formatted > ol > li:nth-child(4) > a[href=\"mailto:Vanessa.Soliz@njc.edu\"]",
+              ".layout__region--second > .paragraph--type--text-box-new.paragraph.paragraph--view-mode--full > .paragraph-inner > .text-text > .field--name-field-paragraph-content.field--type-text-long.text-formatted > ol > li:nth-child(4) > a[href=\"mailto:Vanessa.Soliz@njc.edu\"]"
+            ]
+          }
+        ],
+        "violationTotal": 4,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              "h1"
+            ]
+          },
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          },
+          {
+            "id": "link-in-text-block",
+            "impact": "serious",
+            "help": "Links must be distinguishable without relying on color",
+            "wcag": [
+              "wcag2a",
+              "wcag141"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              "a[href$=\"njc.joinhandshake.com\"]"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/safety-and-security",
+        "title": "Safety and Security | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/safety-and-security",
+        "slug": "safety-and-security",
+        "violations": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          }
+        ],
+        "violationTotal": 2,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              "h1"
+            ]
+          },
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/scholarships",
+        "title": "Scholarships | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/scholarships",
+        "slug": "scholarships",
+        "violations": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          }
+        ],
+        "violationTotal": 2,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 4,
+            "firstTargets": [
+              ".form-item.form-type-select:nth-child(2) > .select-wrapper > select",
+              ".form-item.form-type-select:nth-child(3) > .select-wrapper > select",
+              ".form-item.form-type-select:nth-child(4) > .select-wrapper > select"
+            ]
+          },
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/search",
+        "title": "Search | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/search",
+        "slug": "search",
+        "violations": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          }
+        ],
+        "violationTotal": 2,
+        "incomplete": [
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/student-activities",
+        "title": "Student Activities | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/student-activities",
+        "slug": "student-activities",
+        "violations": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          }
+        ],
+        "violationTotal": 2,
+        "incomplete": [
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/student-government",
+        "title": "Student Government | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/student-government",
+        "slug": "student-government",
+        "violations": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          }
+        ],
+        "violationTotal": 2,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              "h1"
+            ]
+          },
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/student-success-center",
+        "title": "Student Success Center | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/student-success-center",
+        "slug": "student-success-center",
+        "violations": [
+          {
+            "id": "aria-allowed-attr",
+            "impact": "critical",
+            "help": "Elements must only use supported ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-allowed-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".dropdown.menu-item--expanded.nav-item:nth-child(2) > .dropdown-toggle[data-bs-toggle=\"dropdown\"][aria-haspopup=\"true\"]"
+            ]
+          },
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          },
+          {
+            "id": "link-in-text-block",
+            "impact": "serious",
+            "help": "Links must be distinguishable without relying on color",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/link-in-text-block?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag141"
+            ],
+            "nodes": 4,
+            "firstTargets": [
+              "p:nth-child(11) > a[data-uw-rm-brl=\"PR\"]:nth-child(1)",
+              "a[title=\"app\"]",
+              "#p_lt_zonePageContent_PagePlaceholder_PagePlaceholder_lt_zoneLeft_cmstreemenu_tid_0_0_item",
+              "a[href$=\"clep.collegeboard.org/\"]"
+            ]
+          }
+        ],
+        "violationTotal": 7,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              "h1"
+            ]
+          },
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/visit-campus",
+        "title": "Admissions - Visit Campus | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/visit-campus",
+        "slug": "visit-campus",
+        "violations": [
+          {
+            "id": "aria-allowed-attr",
+            "impact": "critical",
+            "help": "Elements must only use supported ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-allowed-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".menu-item--expanded.dropdown.nav-item:nth-child(3) > .dropdown-toggle[data-bs-toggle=\"dropdown\"][aria-haspopup=\"true\"]"
+            ]
+          },
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          },
+          {
+            "id": "link-in-text-block",
+            "impact": "serious",
+            "help": "Links must be distinguishable without relying on color",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/link-in-text-block?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag141"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "li:nth-child(3) > a[title=\"student ambassadors\"][data-uw-rm-ext-link=\"\"][target=\"_blank\"]",
+              "li:nth-child(2) > a[title=\"student ambassadors\"][data-uw-rm-ext-link=\"\"][target=\"_blank\"]"
+            ]
+          }
+        ],
+        "violationTotal": 5,
+        "incomplete": [
+          {
+            "id": "aria-hidden-focus",
+            "impact": "serious",
+            "help": "ARIA hidden element must not be focusable or contain focusable elements",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              "div[data-slick-index=\"-3\"]"
+            ]
+          },
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 4,
+            "firstTargets": [
+              ".org",
+              "#virtualtour_iframe_0 .powered_by",
+              "#virtualtour_iframe_0 .yv"
+            ]
+          },
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://njc.edu/yuma-campus",
+        "title": "Yuma Campus | Northeastern Junior College",
+        "finalUrl": "https://www.njc.edu/yuma-campus",
+        "slug": "yuma-campus",
+        "violations": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "help": "Elements must only use permitted ARIA attributes",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 2,
+            "firstTargets": [
+              "#top",
+              "#main-content"
+            ]
+          }
+        ],
+        "violationTotal": 2,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              "h1"
+            ]
+          },
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".region-nav-aside > .menu--header-menu.block-menu.navigation > h2"
+            ]
+          }
+        ]
+      }
+    ],
+    "pagesHtml": {
+      "https://njc.edu/": "pages/home.html",
+      "https://njc.edu/about-us": "pages/about-us.html",
+      "https://njc.edu/about-us/accreditation": "pages/about-us-accreditation.html",
+      "https://njc.edu/about-us/college-tour": "pages/about-us-college-tour.html",
+      "https://njc.edu/admissions": "pages/admissions.html",
+      "https://njc.edu/admissions/campus-map-directions": "pages/admissions-campus-map-directions.html",
+      "https://njc.edu/admissions/how-register-classes": "pages/admissions-how-register-classes.html",
+      "https://njc.edu/adult-and-continuing-education-northeastern-junior-college": "pages/adult-and-continuing-education-northeastern-junior-college.html",
+      "https://njc.edu/advisory-council": "pages/advisory-council.html",
+      "https://njc.edu/alumni-association": "pages/alumni-association.html",
+      "https://njc.edu/apply-housing": "pages/apply-housing.html",
+      "https://njc.edu/areas-of-interest": "pages/areas-of-interest.html",
+      "https://njc.edu/assessment": "pages/assessment.html",
+      "https://njc.edu/bank-colorado-event-center": "pages/bank-colorado-event-center.html",
+      "https://njc.edu/cafeteria": "pages/cafeteria.html",
+      "https://njc.edu/calendar": "pages/calendar.html",
+      "https://njc.edu/calendar/event/081726/fall-full-term-2026-august-17-december-11-2026": "pages/calendar-event-081726-fall-full-term-2026-august-17-december-11-2026.html",
+      "https://njc.edu/calendar/event/082426/no-show-deadline": "pages/calendar-event-082426-no-show-deadline.html",
+      "https://njc.edu/calendar/event/082526/online-author-talks-beronda-montgomery": "pages/calendar-event-082526-online-author-talks-beronda-montgomery.html",
+      "https://njc.edu/calendar/event/082726/online-author-talks-lucy-foley": "pages/calendar-event-082726-online-author-talks-lucy-foley.html",
+      "https://njc.edu/calendar/event/083126/early-alert-grades-due-august-31-september-11": "pages/calendar-event-083126-early-alert-grades-due-august-31-september-11.html",
+      "https://njc.edu/calendar/event/090126/online-author-talks-david-stewart": "pages/calendar-event-090126-online-author-talks-david-stewart.html",
+      "https://njc.edu/calendar/event/090226/last-day-drop-have-charges-removed-census-date": "pages/calendar-event-090226-last-day-drop-have-charges-removed-census-date.html",
+      "https://njc.edu/calendar/event/090726/labor-day-no-classes": "pages/calendar-event-090726-labor-day-no-classes.html",
+      "https://njc.edu/calendar/event/100226/all-fall-graduation-applications-due": "pages/calendar-event-100226-all-fall-graduation-applications-due.html",
+      "https://njc.edu/cashier": "pages/cashier.html",
+      "https://njc.edu/clubs": "pages/clubs.html",
+      "https://njc.edu/colorado-initiatives": "pages/colorado-initiatives.html",
+      "https://njc.edu/concurrent-enrollment": "pages/concurrent-enrollment.html",
+      "https://njc.edu/cost-calculator/": "pages/cost-calculator.html",
+      "https://njc.edu/course-schedules-transcripts-and-resources": "pages/course-schedules-transcripts-and-resources.html",
+      "https://njc.edu/cpr-classes": "pages/cpr-classes.html",
+      "https://njc.edu/directory": "pages/directory.html",
+      "https://njc.edu/elearning": "pages/elearning.html",
+      "https://njc.edu/esports": "pages/esports.html",
+      "https://njc.edu/facilities-use": "pages/facilities-use.html",
+      "https://njc.edu/financial-aid-assistance": "pages/financial-aid-assistance.html",
+      "https://njc.edu/future-students": "pages/future-students.html",
+      "https://njc.edu/grant-development": "pages/grant-development.html",
+      "https://njc.edu/honors-program": "pages/honors-program.html",
+      "https://njc.edu/human-resources": "pages/human-resources.html",
+      "https://njc.edu/human-resources/jobs-northeastern": "pages/human-resources-jobs-northeastern.html",
+      "https://njc.edu/human-resources/title-ix-and-civil-rights": "pages/human-resources-title-ix-and-civil-rights.html",
+      "https://njc.edu/institutional-research": "pages/institutional-research.html",
+      "https://njc.edu/institutional-research/northeastern-reports/common-data-set": "pages/institutional-research-northeastern-reports-common-data-set.html",
+      "https://njc.edu/institutional-research/northeastern-reports/equity-athletics": "pages/institutional-research-northeastern-reports-equity-athletics.html",
+      "https://njc.edu/international-students": "pages/international-students.html",
+      "https://njc.edu/it": "pages/it.html",
+      "https://njc.edu/livestock-judging": "pages/livestock-judging.html",
+      "https://njc.edu/living-on-campus": "pages/living-on-campus.html",
+      "https://njc.edu/locations": "pages/locations.html",
+      "https://njc.edu/marketing-and-communications": "pages/marketing-and-communications.html",
+      "https://njc.edu/mlc": "pages/mlc.html",
+      "https://njc.edu/news": "pages/news.html",
+      "https://njc.edu/news/010626/northeastern-releases-honor-roll-fall-2025-semester": "pages/news-010626-northeastern-releases-honor-roll-fall-2025-semester.html",
+      "https://njc.edu/news/022726/brennen-welsh-named-2026-new-century-workforce-scholar": "pages/news-022726-brennen-welsh-named-2026-new-century-workforce-scholar.html",
+      "https://njc.edu/news/060226/northeastern-releases-honor-roll-spring-2026-semester": "pages/news-060226-northeastern-releases-honor-roll-spring-2026-semester.html",
+      "https://njc.edu/news/092525/northeastern-junior-college-has-four-new-faces-including-department-head": "pages/news-092525-northeastern-junior-college-has-four-new-faces-including-department-head.html",
+      "https://njc.edu/news/111425/northeastern-junior-college-making-progress-new-welcome-center": "pages/news-111425-northeastern-junior-college-making-progress-new-welcome-center.html",
+      "https://njc.edu/news/111925/njc-applied-technology-campus-awarded-prestigious-leed-green-building-certification": "pages/news-111925-njc-applied-technology-campus-awarded-prestigious-leed-green-building-certification.html",
+      "https://njc.edu/node/2595": "pages/node-2595.html",
+      "https://njc.edu/northeastern-junior-college-foundation": "pages/northeastern-junior-college-foundation.html",
+      "https://njc.edu/northeastern-outfitters": "pages/northeastern-outfitters.html",
+      "https://njc.edu/novel-coronavirus-covid-19": "pages/novel-coronavirus-covid-19.html",
+      "https://njc.edu/open-educational-resources": "pages/open-educational-resources.html",
+      "https://njc.edu/privacy-policy": "pages/privacy-policy.html",
+      "https://njc.edu/program/cosmetology-0": "pages/program-cosmetology-0.html",
+      "https://njc.edu/ranch-horse-versatility": "pages/ranch-horse-versatility.html",
+      "https://njc.edu/records": "pages/records.html",
+      "https://njc.edu/records/transcript-requests": "pages/records-transcript-requests.html",
+      "https://njc.edu/registration": "pages/registration.html",
+      "https://njc.edu/request-information": "pages/request-information.html",
+      "https://njc.edu/residence-life": "pages/residence-life.html",
+      "https://njc.edu/rodeo": "pages/rodeo.html",
+      "https://njc.edu/rural-colorado-career-expo": "pages/rural-colorado-career-expo.html",
+      "https://njc.edu/safety-and-security": "pages/safety-and-security.html",
+      "https://njc.edu/scholarships": "pages/scholarships.html",
+      "https://njc.edu/search": "pages/search.html",
+      "https://njc.edu/student-activities": "pages/student-activities.html",
+      "https://njc.edu/student-government": "pages/student-government.html",
+      "https://njc.edu/student-success-center": "pages/student-success-center.html",
+      "https://njc.edu/visit-campus": "pages/visit-campus.html",
+      "https://njc.edu/yuma-campus": "pages/yuma-campus.html"
+    }
+  }
+}
