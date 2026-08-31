@@ -1,8 +1,8 @@
 {
-  "siteGenerated": "2026-08-26T20:45:38.983Z",
+  "siteGenerated": "2026-08-31T13:14:48.113Z",
   "sourceRepo": "https://github.com/ThirstyHead/audit-njc.edu",
   "report": {
-    "generated": "2026-08-26T20:45:37.843Z",
+    "generated": "2026-08-31T13:14:47.054Z",
     "tags": [
       "wcag2a",
       "wcag2aa",
@@ -242,11 +242,11 @@
             ],
             "nodes": 12,
             "firstTargets": [
-              "#fitvid108764 iframe .ytmVideoInfoVideoTitle",
-              "#fitvid763249 iframe .ytmVideoInfoVideoTitle",
-              "#fitvid845782 iframe .ytmVideoInfoVideoTitle",
-              "#fitvid885957 iframe .ytmVideoInfoVideoTitle",
-              "#fitvid202886 iframe .ytmVideoInfoVideoTitle"
+              "#fitvid923361 iframe .ytmVideoInfoVideoTitle",
+              "#fitvid862395 iframe .ytmVideoInfoVideoTitle",
+              "#fitvid736883 iframe .ytmVideoInfoVideoTitle",
+              "#fitvid430057 iframe .ytmVideoInfoVideoTitle",
+              "#fitvid8735 iframe .ytmVideoInfoVideoTitle"
             ]
           },
           {
@@ -262,9 +262,9 @@
             "firstTargets": [
               "#top",
               "#main-content",
-              "#fitvid108764 iframe #movie_player",
-              "#fitvid763249 iframe #movie_player",
-              "#fitvid845782 iframe #movie_player"
+              "#fitvid923361 iframe #movie_player",
+              "#fitvid862395 iframe #movie_player",
+              "#fitvid736883 iframe #movie_player"
             ]
           },
           {
@@ -278,11 +278,11 @@
             ],
             "nodes": 11,
             "firstTargets": [
-              "#fitvid763249 iframe .ytmVideoInfoChannelAvatar",
-              "#fitvid845782 iframe .ytmVideoInfoChannelAvatar",
-              "#fitvid885957 iframe .ytmVideoInfoChannelAvatar",
-              "#fitvid202886 iframe .ytmVideoInfoChannelAvatar",
-              "#fitvid423711 iframe .ytmVideoInfoChannelAvatar"
+              "#fitvid862395 iframe .ytmVideoInfoChannelAvatar",
+              "#fitvid736883 iframe .ytmVideoInfoChannelAvatar",
+              "#fitvid430057 iframe .ytmVideoInfoChannelAvatar",
+              "#fitvid8735 iframe .ytmVideoInfoChannelAvatar",
+              "#fitvid190156 iframe .ytmVideoInfoChannelAvatar"
             ]
           }
         ],
@@ -324,9 +324,9 @@
             ],
             "nodes": 24,
             "firstTargets": [
-              "#fitvid108764",
-              "#fitvid108764 iframe",
-              "#fitvid763249"
+              "#fitvid923361",
+              "#fitvid923361 iframe",
+              "#fitvid862395"
             ]
           }
         ]
@@ -689,23 +689,9 @@
               "#top",
               "#main-content"
             ]
-          },
-          {
-            "id": "image-alt",
-            "impact": "critical",
-            "help": "Images must have alternative text",
-            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/image-alt?application=playwright",
-            "wcag": [
-              "wcag2a",
-              "wcag111"
-            ],
-            "nodes": 1,
-            "firstTargets": [
-              "img[width=\"300\"]"
-            ]
           }
         ],
-        "violationTotal": 3,
+        "violationTotal": 2,
         "incomplete": [
           {
             "id": "color-contrast",
@@ -1163,7 +1149,7 @@
             "firstTargets": [
               ".ui-datepicker-unselectable.ui-state-disabled.ui-datepicker-week-end:nth-child(7) > .ui-state-default",
               "a[data-date=\"1\"]",
-              ".ui-priority-secondary[data-date=\"2\"][aria-current=\"false\"]"
+              ".ui-priority-secondary[data-date=\"2\"][data-uw-original-href=\"#\"]"
             ]
           },
           {
@@ -1307,7 +1293,7 @@
             "firstTargets": [
               ".ui-datepicker-unselectable.ui-state-disabled.ui-datepicker-week-end:nth-child(7) > .ui-state-default",
               "a[data-date=\"1\"]",
-              ".ui-priority-secondary[data-date=\"2\"][aria-current=\"false\"]"
+              ".ui-priority-secondary[data-date=\"2\"][data-uw-original-href=\"#\"]"
             ]
           },
           {
@@ -1479,7 +1465,7 @@
             "firstTargets": [
               ".ui-datepicker-unselectable.ui-state-disabled.ui-datepicker-week-end:nth-child(7) > .ui-state-default",
               "a[data-date=\"1\"]",
-              ".ui-priority-secondary[data-date=\"2\"][aria-current=\"false\"]"
+              ".ui-datepicker-other-month[data-month=\"8\"][data-handler=\"selectDay\"]:nth-child(4) > a[data-uw-original-href=\"#\"]"
             ]
           },
           {
@@ -1551,7 +1537,7 @@
             "firstTargets": [
               ".ui-datepicker-unselectable.ui-state-disabled.ui-datepicker-week-end:nth-child(7) > .ui-state-default",
               "a[data-date=\"1\"]",
-              ".ui-priority-secondary[data-date=\"2\"][aria-current=\"false\"]"
+              ".ui-priority-secondary[data-date=\"2\"][data-uw-original-href=\"#\"]"
             ]
           },
           {
@@ -2583,27 +2569,9 @@
               "#top",
               "#main-content"
             ]
-          },
-          {
-            "id": "link-name",
-            "impact": "serious",
-            "help": "Links must have discernible text",
-            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/link-name?application=playwright",
-            "wcag": [
-              "wcag2a",
-              "wcag244",
-              "wcag412"
-            ],
-            "nodes": 4,
-            "firstTargets": [
-              ".overlay-box-link[href$=\"visit-campus\"]",
-              ".overlay-box-link[href$=\"mlc\"]",
-              ".overlay-box-link[href$=\"living-on-campus\"]",
-              "a[href$=\"student-activities\"]"
-            ]
           }
         ],
-        "violationTotal": 6,
+        "violationTotal": 2,
         "incomplete": [
           {
             "id": "color-contrast",
@@ -2877,7 +2845,7 @@
             "firstTargets": [
               "ul:nth-child(4) > li:nth-child(7) > a[data-uw-rm-brl=\"PR\"]",
               "a[href$=\"www.pandys.org\"]",
-              "p:nth-child(60) > a[data-uw-pdf-br=\"1\"][data-uw-pdf-doc=\"\"]"
+              "p:nth-child(60) > a"
             ]
           }
         ],
@@ -2957,7 +2925,7 @@
             ],
             "nodes": 2,
             "firstTargets": [
-              "p:nth-child(9) > a[data-uw-rm-ext-link=\"\"][target=\"_blank\"][data-uw-rm-brl=\"PR\"]",
+              "p:nth-child(9) > a[target=\"_blank\"][data-uw-rm-ext-link=\"\"][data-uw-rm-brl=\"PR\"]",
               "a[title=\"FERPA\"]"
             ]
           }
@@ -3143,7 +3111,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#fitvid586322 iframe .ytmVideoInfoVideoTitle"
+              "#fitvid849105 iframe .ytmVideoInfoVideoTitle"
             ]
           },
           {
@@ -3159,7 +3127,7 @@
             "firstTargets": [
               "#top",
               "#main-content",
-              "#fitvid586322 iframe #movie_player"
+              "#fitvid849105 iframe #movie_player"
             ]
           }
         ],
@@ -3201,8 +3169,8 @@
             ],
             "nodes": 2,
             "firstTargets": [
-              "#fitvid586322",
-              "#fitvid586322 iframe"
+              "#fitvid849105",
+              "#fitvid849105 iframe"
             ]
           }
         ]
@@ -3557,25 +3525,9 @@
               "#top",
               "#main-content"
             ]
-          },
-          {
-            "id": "color-contrast",
-            "impact": "serious",
-            "help": "Elements must meet minimum color contrast ratio thresholds",
-            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=playwright",
-            "wcag": [
-              "wcag2aa",
-              "wcag143"
-            ],
-            "nodes": 3,
-            "firstTargets": [
-              "div[data-history-node-id=\"7409\"] > .news-panel > .news-date",
-              "div[data-history-node-id=\"7371\"] > .news-panel > .news-date",
-              "div[data-history-node-id=\"7343\"] > .news-panel > .news-date"
-            ]
           }
         ],
-        "violationTotal": 5,
+        "violationTotal": 2,
         "incomplete": [
           {
             "id": "duplicate-id-aria",
