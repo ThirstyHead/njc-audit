@@ -315,7 +315,7 @@
                                         <p><strong>Element location</strong></p>
                                         <pre><code class="css text-wrap">a[href$&#x3D;&quot;www.pandys.org&quot;]</code></pre>
                                         <p><strong>Element source</strong></p>
-                                        <pre><code class="html text-wrap">&lt;a href&#x3D;&quot;http:&#x2F;&#x2F;www.pandys.org&quot; target&#x3D;&quot;_blank&quot; title&#x3D;&quot;Opens a new window&quot; data-uw-rm-brl&#x3D;&quot;PR&quot; data-uw-original-href&#x3D;&quot;http:&#x2F;&#x2F;www.pandys.org&quot; aria-label&#x3D;&quot;www.pandys.org - opens in a new tab&quot; data-uw-rm-ext-link&#x3D;&quot;&quot; uw-rm-external-link-id&#x3D;&quot;http:&#x2F;&#x2F;www.pandys.org&#x2F;$www.pandys.org&quot;&gt;www.pandys.org&lt;&#x2F;a&gt;</code></pre>
+                                        <pre><code class="html text-wrap">&lt;a href&#x3D;&quot;http:&#x2F;&#x2F;www.pandys.org&quot; target&#x3D;&quot;_blank&quot; title&#x3D;&quot;Opens a new window&quot;&gt;www.pandys.org&lt;&#x2F;a&gt;</code></pre>
                                     </td>
                                     <td>
                                         <div class="wrapBreakWord">
@@ -334,9 +334,9 @@
                                     <td>3</td>
                                     <td>
                                         <p><strong>Element location</strong></p>
-                                        <pre><code class="css text-wrap">p:nth-child(60) &gt; a[data-uw-pdf-br&#x3D;&quot;1&quot;][data-uw-pdf-doc&#x3D;&quot;&quot;]</code></pre>
+                                        <pre><code class="css text-wrap">p:nth-child(60) &gt; a</code></pre>
                                         <p><strong>Element source</strong></p>
-                                        <pre><code class="html text-wrap">&lt;a href&#x3D;&quot;https:&#x2F;&#x2F;cdpsdocs.state.co.us&#x2F;ovp&#x2F;SARP&#x2F;SANELocations.pdf&quot; data-uw-pdf-br&#x3D;&quot;1&quot; data-uw-pdf-doc&#x3D;&quot;&quot;&gt;SANELocations.pdf (state.co.us)&lt;&#x2F;a&gt;</code></pre>
+                                        <pre><code class="html text-wrap">&lt;a href&#x3D;&quot;https:&#x2F;&#x2F;cdpsdocs.state.co.us&#x2F;ovp&#x2F;SARP&#x2F;SANELocations.pdf&quot;&gt;SANELocations.pdf (state.co.us)&lt;&#x2F;a&gt;</code></pre>
                                     </td>
                                     <td>
                                         <div class="wrapBreakWord">
@@ -396,7 +396,7 @@
                                         <td>Elements must only use supported ARIA attributes</td>
                                         <td>aria-allowed-attr</td>
                                         <td>WCAG 2 Level A, WCAG 4.1.2</td>
-                                        <td>32</td>
+                                        <td>19</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">2</th>
@@ -410,14 +410,14 @@
                                         <td>ARIA attributes must be used as specified for the element&#39;s role</td>
                                         <td>aria-conditional-attr</td>
                                         <td>WCAG 2 Level A, WCAG 4.1.2</td>
-                                        <td>32</td>
+                                        <td>19</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">4</th>
                                         <td>Deprecated ARIA roles must not be used</td>
                                         <td>aria-deprecated-role</td>
                                         <td>WCAG 2 Level A, WCAG 4.1.2</td>
-                                        <td>16</td>
+                                        <td>17</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">5</th>
@@ -431,56 +431,56 @@
                                         <td>ARIA hidden element must not be focusable or contain focusable elements</td>
                                         <td>aria-hidden-focus</td>
                                         <td>WCAG 2 Level A, WCAG 4.1.2</td>
-                                        <td>10</td>
+                                        <td>12</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">7</th>
                                         <td>Elements must only use permitted ARIA attributes</td>
                                         <td>aria-prohibited-attr</td>
                                         <td>WCAG 2 Level A, WCAG 4.1.2</td>
-                                        <td>30</td>
+                                        <td>17</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">8</th>
                                         <td>Required ARIA attributes must be provided</td>
                                         <td>aria-required-attr</td>
                                         <td>WCAG 2 Level A, WCAG 4.1.2</td>
-                                        <td>16</td>
+                                        <td>17</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">9</th>
                                         <td>ARIA roles used must conform to valid values</td>
                                         <td>aria-roles</td>
                                         <td>WCAG 2 Level A, WCAG 4.1.2</td>
-                                        <td>16</td>
+                                        <td>17</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">10</th>
                                         <td>ARIA attributes must conform to valid values</td>
                                         <td>aria-valid-attr-value</td>
                                         <td>WCAG 2 Level A, WCAG 4.1.2</td>
-                                        <td>32</td>
+                                        <td>19</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">11</th>
                                         <td>ARIA attributes must conform to valid names</td>
                                         <td>aria-valid-attr</td>
                                         <td>WCAG 2 Level A, WCAG 4.1.2</td>
-                                        <td>32</td>
+                                        <td>19</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">12</th>
                                         <td>Inline text spacing must be adjustable with custom stylesheets</td>
                                         <td>avoid-inline-spacing</td>
                                         <td>WCAG 2.1 Level AA, WCAG 1.4.1.2</td>
-                                        <td>4</td>
+                                        <td>8</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">13</th>
                                         <td>Buttons must have discernible text</td>
                                         <td>button-name</td>
                                         <td>WCAG 2 Level A, WCAG 4.1.2</td>
-                                        <td>3</td>
+                                        <td>4</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">14</th>
@@ -494,7 +494,7 @@
                                         <td>Elements must meet minimum color contrast ratio thresholds</td>
                                         <td>color-contrast</td>
                                         <td>WCAG 2 Level AA, WCAG 1.4.3</td>
-                                        <td>239</td>
+                                        <td>230</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">16</th>
@@ -508,7 +508,7 @@
                                         <td>IDs used in ARIA and labels must be unique</td>
                                         <td>duplicate-id-aria</td>
                                         <td>WCAG 2 Level A, WCAG 4.1.2</td>
-                                        <td>5</td>
+                                        <td>6</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">18</th>
@@ -536,7 +536,7 @@
                                         <td>Images must have alternative text</td>
                                         <td>image-alt</td>
                                         <td>WCAG 2 Level A, WCAG 1.1.1</td>
-                                        <td>10</td>
+                                        <td>7</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">22</th>
@@ -578,7 +578,7 @@
                                         <td>Interactive controls must not be nested</td>
                                         <td>nested-interactive</td>
                                         <td>WCAG 2 Level A, WCAG 4.1.2</td>
-                                        <td>15</td>
+                                        <td>13</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">28</th>
