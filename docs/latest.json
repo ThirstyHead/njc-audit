@@ -1,8 +1,8 @@
 {
-  "siteGenerated": "2026-09-28T13:26:50.413Z",
+  "siteGenerated": "2026-10-05T14:09:31.101Z",
   "sourceRepo": "https://github.com/ThirstyHead/audit-njc.edu",
   "report": {
-    "generated": "2026-09-28T13:26:48.874Z",
+    "generated": "2026-10-05T14:09:30.324Z",
     "tags": [
       "wcag2a",
       "wcag2aa",
@@ -242,11 +242,11 @@
             ],
             "nodes": 12,
             "firstTargets": [
-              "#fitvid947963 iframe .ytmVideoInfoVideoTitle",
-              "#fitvid401184 iframe .ytmVideoInfoVideoTitle",
-              "#fitvid66083 iframe .ytmVideoInfoVideoTitle",
-              "#fitvid626583 iframe .ytmVideoInfoVideoTitle",
-              "#fitvid141548 iframe .ytmVideoInfoVideoTitle"
+              "#fitvid757331 iframe .ytmVideoInfoVideoTitle",
+              "#fitvid501934 iframe .ytmVideoInfoVideoTitle",
+              "#fitvid975525 iframe .ytmVideoInfoVideoTitle",
+              "#fitvid650839 iframe .ytmVideoInfoVideoTitle",
+              "#fitvid833022 iframe .ytmVideoInfoVideoTitle"
             ]
           },
           {
@@ -262,9 +262,9 @@
             "firstTargets": [
               "#top",
               "#main-content",
-              "#fitvid947963 iframe #movie_player",
-              "#fitvid401184 iframe #movie_player",
-              "#fitvid66083 iframe #movie_player"
+              "#fitvid757331 iframe #movie_player",
+              "#fitvid501934 iframe #movie_player",
+              "#fitvid975525 iframe #movie_player"
             ]
           },
           {
@@ -278,11 +278,11 @@
             ],
             "nodes": 11,
             "firstTargets": [
-              "#fitvid401184 iframe .ytmVideoInfoChannelAvatar",
-              "#fitvid66083 iframe .ytmVideoInfoChannelAvatar",
-              "#fitvid626583 iframe .ytmVideoInfoChannelAvatar",
-              "#fitvid141548 iframe .ytmVideoInfoChannelAvatar",
-              "#fitvid899527 iframe .ytmVideoInfoChannelAvatar"
+              "#fitvid501934 iframe .ytmVideoInfoChannelAvatar",
+              "#fitvid975525 iframe .ytmVideoInfoChannelAvatar",
+              "#fitvid650839 iframe .ytmVideoInfoChannelAvatar",
+              "#fitvid833022 iframe .ytmVideoInfoChannelAvatar",
+              "#fitvid219319 iframe .ytmVideoInfoChannelAvatar"
             ]
           }
         ],
@@ -324,9 +324,9 @@
             ],
             "nodes": 24,
             "firstTargets": [
-              "#fitvid947963",
-              "#fitvid947963 iframe",
-              "#fitvid401184"
+              "#fitvid757331",
+              "#fitvid757331 iframe",
+              "#fitvid501934"
             ]
           }
         ]
@@ -348,7 +348,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              ".menu-item--expanded.dropdown.nav-item:nth-child(3) > .dropdown-toggle[data-bs-toggle=\"dropdown\"][aria-haspopup=\"true\"]"
+              ".menu-item--expanded.dropdown.nav-item:nth-child(4) > .dropdown-toggle[data-bs-toggle=\"dropdown\"][aria-haspopup=\"true\"]"
             ]
           },
           {
@@ -443,7 +443,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              ".menu-item--expanded.dropdown.nav-item:nth-child(3) > .dropdown-toggle[data-bs-toggle=\"dropdown\"][aria-haspopup=\"true\"]"
+              ".menu-item--expanded.dropdown.nav-item:nth-child(4) > .dropdown-toggle[data-bs-toggle=\"dropdown\"][aria-haspopup=\"true\"]"
             ]
           },
           {
@@ -524,7 +524,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              ".menu-item--expanded.dropdown.nav-item:nth-child(3) > .dropdown-toggle[data-bs-toggle=\"dropdown\"][aria-haspopup=\"true\"]"
+              ".menu-item--expanded.dropdown.nav-item:nth-child(4) > .dropdown-toggle[data-bs-toggle=\"dropdown\"][aria-haspopup=\"true\"]"
             ]
           },
           {
@@ -1128,7 +1128,7 @@
             "nodes": 3,
             "firstTargets": [
               "a[href$=\"day\"] > .button-text",
-              "div:nth-child(2) > .grey[data-uw-original-href$=\"calendar\"][href$=\"calendar\"] > .button-text",
+              "div:nth-child(2) > .grey.button[href$=\"calendar\"] > .button-text",
               "a[href$=\"academic-calendar\"] > .button-text"
             ]
           }
@@ -2693,7 +2693,7 @@
             "firstTargets": [
               "ul:nth-child(4) > li:nth-child(7) > a[data-uw-rm-brl=\"PR\"]",
               "a[href$=\"www.pandys.org\"]",
-              "p:nth-child(60) > a"
+              "p:nth-child(60) > a[data-uw-pdf-br=\"1\"][data-uw-pdf-doc=\"\"]"
             ]
           }
         ],
@@ -2959,7 +2959,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#fitvid18312 iframe .ytmVideoInfoVideoTitle"
+              "#fitvid97087 iframe .ytmVideoInfoVideoTitle"
             ]
           },
           {
@@ -2975,7 +2975,7 @@
             "firstTargets": [
               "#top",
               "#main-content",
-              "#fitvid18312 iframe #movie_player"
+              "#fitvid97087 iframe #movie_player"
             ]
           }
         ],
@@ -3017,8 +3017,8 @@
             ],
             "nodes": 2,
             "firstTargets": [
-              "#fitvid18312",
-              "#fitvid18312 iframe"
+              "#fitvid97087",
+              "#fitvid97087 iframe"
             ]
           }
         ]
@@ -3602,13 +3602,14 @@
               "wcag2a",
               "wcag412"
             ],
-            "nodes": 1,
+            "nodes": 2,
             "firstTargets": [
-              "#top"
+              "#top",
+              "#main-content"
             ]
           }
         ],
-        "violationTotal": 1,
+        "violationTotal": 2,
         "incomplete": [
           {
             "id": "duplicate-id-aria",
@@ -4188,8 +4189,8 @@
             ],
             "nodes": 3,
             "firstTargets": [
-              "p:nth-child(11) > a[data-uw-rm-vglnk=\"\"]",
-              "p:nth-child(23) > a[data-uw-rm-vglnk=\"\"]",
+              "a[data-uw-rm-vglnk=\"\"]",
+              "p:nth-child(23) > a",
               "a[title=\"Opens a new window\"]"
             ]
           }
@@ -4891,7 +4892,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              ".menu-item--expanded.dropdown.nav-item:nth-child(3) > .dropdown-toggle[data-bs-toggle=\"dropdown\"][aria-haspopup=\"true\"]"
+              ".menu-item--expanded.dropdown.nav-item:nth-child(4) > .dropdown-toggle[data-bs-toggle=\"dropdown\"][aria-haspopup=\"true\"]"
             ]
           },
           {
@@ -4908,24 +4909,9 @@
               "#top",
               "#main-content"
             ]
-          },
-          {
-            "id": "link-in-text-block",
-            "impact": "serious",
-            "help": "Links must be distinguishable without relying on color",
-            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/link-in-text-block?application=playwright",
-            "wcag": [
-              "wcag2a",
-              "wcag141"
-            ],
-            "nodes": 2,
-            "firstTargets": [
-              "li:nth-child(3) > a[title=\"student ambassadors\"][data-uw-rm-ext-link=\"\"][target=\"_blank\"]",
-              "li:nth-child(2) > a[title=\"student ambassadors\"][data-uw-rm-ext-link=\"\"][target=\"_blank\"]"
-            ]
           }
         ],
-        "violationTotal": 5,
+        "violationTotal": 3,
         "incomplete": [
           {
             "id": "aria-hidden-focus",
